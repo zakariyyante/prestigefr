@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Star, Gift, Zap, ChevronRight } from 'lucide-react';
+import { track } from '@vercel/analytics';
 import { Partner } from '@/types';
 import { getImageUrl } from '@/lib/api';
 import { getStoredGclid } from '@/utils/cookies';
@@ -50,14 +51,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
   };
 
   const handleCTA = () => {
-    // Analytics tracking (mocked for now as per requirements)
-    console.log('brand_click', {
-      partner_name: partner.name,
-      partner_id: String(partner.id),
-      order: String(order),
-      is_mobile: String(isMobile),
-      has_gclid: String(!!getStoredGclid()),
-    });
+    track('brand_click', { brand: partner.name });
   };
 
   if (isMobile) {
@@ -66,7 +60,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
         {/* Top Section (2 columns) */}
         <div className="flex justify-between items-center">
           {/* Left: Logo */}
-          <div className="w-32 h-20 relative bg-white/10 rounded-lg overflow-hidden flex items-center justify-center">
+          <div className="w-32 h-20 relative  overflow-hidden flex items-center justify-center">
             <Image
               src={getImageUrl(partner.logo)}
               alt={partner.name}
@@ -88,7 +82,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
 
         {/* Bottom Section */}
         <div className="space-y-2">
-          <p className="text-xs font-medium text-gray-300 line-clamp-2">
+          <p className="text-xl text-center font-bold text-gray-300 line-clamp-2">
             {partner.bonusText}
           </p>
           

@@ -17,57 +17,31 @@ export async function getLandingPage(): Promise<ApiLandingPage | null> {
   }
 }
 
-export async function fetchPartners(landingPageId: string, isMobile: boolean, hasGclid: boolean): Promise<Partner[]> {
+export async function fetchPartners(landingPageId: string, isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
+  const showMobile = isMobile && hasGclid && referer.toLowerCase().includes("google");
+
+  function filterAndMap(data: ApiPageBrand[]): Partner[] {
+    const filtered = data.filter(pb => showMobile ? pb.isMobile === true : !pb.isMobile);
+    return filtered.map((pb, i) => ({
+      id: String(i + 1),
+      name: pb.name,
+      logo: pb.logo,
+      bonusText: pb.bonusText,
+      partnerUrl: pb.link,
+      isMobile: pb.isMobile ?? false,
+      order: i + 1,
+      rating: parseFloat((10 - i * 0.1).toFixed(1)),
+    }));
+  }
+
   try {
     const res = await fetch(`${API_URL}/public/page-brands/landing-page/${landingPageId}`);
     if (!res.ok) throw new Error("Failed to fetch brands");
     const data: ApiPageBrand[] = await res.json();
-
-    let filtered = data.filter(pb => {
-      if (isMobile && hasGclid) {
-        return pb.isMobile === true;
-      }
-      return pb.isMobile === false;
-    });
-
-    // Fallback if isMobile && hasGclid returns nothing
-    if (isMobile && hasGclid && filtered.length === 0) {
-      filtered = data.filter(pb => pb.isMobile === false);
-    }
-
-    const partners: Partner[] = filtered.map(pb => ({
-      id: pb.brand.id,
-      name: pb.brand.name,
-      logo: pb.brand.logo,
-      bonusText: pb.isBonusTextOverridden ? (pb.overrideBonusText || pb.brand.bonusText) : pb.brand.bonusText,
-      partnerUrl: pb.overrideLink || pb.brand.link,
-      isMobile: pb.isMobile,
-      order: pb.order,
-      rating: pb.brand.rating
-    }));
-
-    return partners.sort((a, b) => (a.order || 999) - (b.order || 999));
+    return filterAndMap(data);
   } catch (error) {
     console.error("API Error (Partners):", error);
-    // Mock fallback with same logic
-    let filtered = mockPageBrands.filter(pb => {
-      if (isMobile && hasGclid) return pb.isMobile === true;
-      return pb.isMobile === false;
-    });
-    if (isMobile && hasGclid && filtered.length === 0) {
-      filtered = mockPageBrands.filter(pb => pb.isMobile === false);
-    }
-
-    return filtered.map(pb => ({
-      id: pb.brand.id,
-      name: pb.brand.name,
-      logo: pb.brand.logo,
-      bonusText: pb.isBonusTextOverridden ? (pb.overrideBonusText || pb.brand.bonusText) : pb.brand.bonusText,
-      partnerUrl: pb.overrideLink || pb.brand.link,
-      isMobile: pb.isMobile,
-      order: pb.order,
-      rating: pb.brand.rating
-    })).sort((a, b) => (a.order || 999) - (b.order || 999));
+    return filterAndMap(mockPageBrands);
   }
 }
 

@@ -8,20 +8,12 @@ export interface ApiLandingPage {
 }
 
 export interface ApiPageBrand {
-  id: string;
-  brand: {
-    id: string;
-    name: string;
-    logo: string;
-    bonusText: string;
-    link: string;
-    rating?: number;
-  };
-  isBonusTextOverridden: boolean;
-  overrideBonusText?: string;
-  overrideLink?: string;
-  isMobile: boolean;
-  order: number;
+  name: string;
+  logo: string;
+  bonusText: string;
+  link: string;
+  rating?: number;
+  isMobile?: boolean;
 }
 
 export interface Partner {

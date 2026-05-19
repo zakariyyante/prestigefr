@@ -30,10 +30,11 @@ export default async function Home() {
   // For the initial server fetch, we check if it's already in cookies
   const cookieHeader = headerList.get('cookie') || '';
   const hasGclid = cookieHeader.includes('gclid=');
+  const referer = headerList.get('referer') || '';
 
   const lp = await getLandingPage();
   const landingPageId = lp?.id || "default";
-  const partners = await fetchPartners(landingPageId, isMobile, hasGclid);
+  const partners = await fetchPartners(landingPageId, isMobile, hasGclid, referer);
 
   return (
     <div className="flex flex-col min-h-screen">
