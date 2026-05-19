@@ -44,7 +44,7 @@ export const mockPageBrands: ApiPageBrand[] = [
   // },
   {
     name: "SpinFin",
-    logo: "/SpinFin.png",
+    logo: "/spinfin.png",
     bonusText: "350% jusqu’à 10 000 € + 500 FS",
     link: "https://go.driveaffiliates.com/visit/?bta=35516&nci=5358&utm_campaign=SpinFin-SRJ53-FR&afp=",
     isMobile: true,
