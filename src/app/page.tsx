@@ -33,8 +33,7 @@ export default async function Home() {
   const referer = headerList.get('referer') || '';
 
   const lp = await getLandingPage();
-  const landingPageId = lp?.id || "default";
-  const partners = await fetchPartners(landingPageId, isMobile, hasGclid, referer);
+  const partners = await fetchPartners( isMobile, hasGclid, referer);
 
   return (
     <div className="flex flex-col min-h-screen">

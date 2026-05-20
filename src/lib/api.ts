@@ -17,7 +17,7 @@ export async function getLandingPage(): Promise<ApiLandingPage | null> {
   }
 }
 
-export async function fetchPartners(landingPageId: string, isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
+export async function fetchPartners(isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
   const showMobile = isMobile && hasGclid && referer.toLowerCase().includes("google");
 
   function filterAndMap(data: ApiPageBrand[]): Partner[] {
@@ -35,7 +35,7 @@ export async function fetchPartners(landingPageId: string, isMobile: boolean, ha
   }
 
   try {
-    const res = await fetch(`${API_URL}/public/page-brands/landing-page/${landingPageId}`);
+    const res = await fetch(`${API_URL}/public/page-brands/account/${ACCOUNT_ID}`);
     if (!res.ok) throw new Error("Failed to fetch brands");
     const data: ApiPageBrand[] = await res.json();
     return filterAndMap(data);
