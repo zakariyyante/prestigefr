@@ -56,7 +56,13 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
 
   if (isMobile) {
     return (
-      <div className="bg-card backdrop-blur-md border border-border rounded-xl overflow-hidden mb-3 p-3 flex flex-col space-y-2 shadow-xl">
+      <a
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={handleCTA}
+        className="block bg-card backdrop-blur-md border border-border rounded-xl overflow-hidden mb-3 p-3 flex flex-col space-y-2 shadow-xl"
+      >
         {/* Top Section (2 columns) */}
         <div className="flex justify-between items-center">
           {/* Left: Logo */}
@@ -65,6 +71,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
               src={getImageUrl(partner.logo)}
               alt={partner.name}
               fill
+              unoptimized
               className="object-contain p-2"
               onError={(e) => {
                 (e.target as any).src = '/placeholder.svg';
@@ -87,25 +94,27 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           </p>
           
           <div className="flex items-center justify-center pt-1">
-             <a
-              href={linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleCTA}
+             <div
               className="bg-primary text-background w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
             >
               <span>{order === 1 ? '🎁 PROFITER DU BONUS' : '⚡ JOUER MAINTENANT'}</span>
               <ChevronRight size={18} />
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     );
   }
 
   // Desktop Layout
   return (
-    <div className="bg-card backdrop-blur-md border border-border rounded-2xl overflow-hidden mb-6 hover:border-primary/50 transition-all group shadow-2xl">
+    <a
+      href={linkUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={handleCTA}
+      className="block bg-card backdrop-blur-md border border-border rounded-2xl overflow-hidden mb-6 hover:border-primary/50 transition-all group shadow-2xl"
+    >
       <div className="flex items-center p-6">
         {/* Rank */}
         <div className="w-12 flex flex-col items-center justify-center">
@@ -120,6 +129,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
             src={getImageUrl(partner.logo)}
             alt={partner.name}
             fill
+            unoptimized
             className="object-contain p-4 group-hover:scale-105 transition-transform"
             onError={(e) => {
               (e.target as any).src = '/placeholder.svg';
@@ -150,19 +160,15 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
             <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Score Expert</p>
           </div>
           
-          <a
-            href={linkUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleCTA}
+          <div
             className="bg-primary text-background px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
           >
             <span>{order === 1 ? 'PROFITER DU BONUS' : 'VISITER LE SITE'}</span>
             <ChevronRight size={20} />
-          </a>
+          </div>
           <p className="text-[10px] text-gray-500 italic">Termes & Conditions s'appliquent</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

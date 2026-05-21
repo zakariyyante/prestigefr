@@ -31,7 +31,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ [
   const referer = headerList.get('referer') || '';
 
   const lp = await getLandingPage();
-  const partners = await fetchPartners(isMobile, hasGclid, referer);
+  const partners = lp?.id ? await fetchPartners(lp.id, isMobile, hasGclid, referer) : [];
 
   return (
     <div className="flex flex-col min-h-screen">

@@ -17,37 +17,54 @@ export async function getLandingPage(): Promise<ApiLandingPage | null> {
   }
 }
 
-export async function fetchPartners(isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
-  const showMobile = isMobile && hasGclid && referer.toLowerCase().includes("google");
-
+export async function fetchPartners(landingPageId: string, isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
   function filterAndMap(data: ApiPageBrand[]): Partner[] {
-    const filtered = data.filter(pb => showMobile ? pb.isMobile === true : !pb.isMobile);
-    return filtered.map((pb, i) => ({
-      id: String(i + 1),
-      name: pb.name,
-      logo: pb.logo,
-      bonusText: pb.bonusText,
-      partnerUrl: pb.link,
-      isMobile: pb.isMobile ?? false,
-      order: i + 1,
-      rating: parseFloat((10 - i * 0.1).toFixed(1)),
-    }));
+    const filtered = data.filter(pb => {
+      if (pb.isMobile === false) return true;
+      if (pb.isMobile === true) return isMobile;
+      return true;
+    });
+
+    return filtered.map((pb, i) => {
+      const bonusText = pb.isBonusTextOverridden ? pb.overrideBonusText : pb.brand?.bonusText;
+      const partnerUrl = pb.overrideLink || pb.brand?.link;
+      const logo = pb.brand?.lightLogo || pb.brand?.darkLogo;
+
+      return {
+        id: pb.id || String(i + 1),
+        name: pb.brand?.name || "Unknown",
+        logo: logo || "",
+        bonusText: bonusText || "",
+        partnerUrl: partnerUrl || "",
+        isMobile: pb.isMobile,
+        order: pb.order,
+        rating: parseFloat((10 - i * 0.1).toFixed(1)),
+      };
+    }).sort((a, b) => a.order - b.order);
   }
 
   try {
-    const res = await fetch(`${API_URL}/public/page-brands/account/${ACCOUNT_ID}`);
+    const res = await fetch(`${API_URL}/public/page-brands/landing-page/${landingPageId}`);
     if (!res.ok) throw new Error("Failed to fetch brands");
     const data: ApiPageBrand[] = await res.json();
     return filterAndMap(data);
   } catch (error) {
     console.error("API Error (Partners):", error);
-    return filterAndMap(mockPageBrands);
+    return filterAndMap(mockPageBrands as any); // Type cast since mock data structure might be outdated
   }
 }
 
 export function getImageUrl(filename: string | null | undefined): string {
   if (!filename) return "/placeholder.svg";
   if (filename.startsWith("http")) return filename;
-  if (filename.startsWith("/")) return filename;
-  return `/${filename}`;
+  
+  // Clean up filename just in case
+  const cleanFilename = filename.startsWith("/") ? filename.substring(1) : filename;
+  
+  if (!API_URL) {
+    return `/${cleanFilename}`;
+  }
+  
+  const formattedBaseUrl = API_URL.startsWith("http") ? API_URL : `https://${API_URL}`;
+  return `${formattedBaseUrl}/files/brands/${cleanFilename}`;
 }
