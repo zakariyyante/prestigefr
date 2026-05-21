@@ -20,20 +20,18 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function Home() {
+export default async function Home({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
   const headerList = await headers();
+  const params = await searchParams;
   const userAgent = headerList.get('user-agent') || '';
   const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
   const isMobile = mobileRegex.test(userAgent);
 
-  // Note: gclid is read client-side via GclidTracker and stored in cookies
-  // For the initial server fetch, we check if it's already in cookies
-  const cookieHeader = headerList.get('cookie') || '';
-  const hasGclid = cookieHeader.includes('gclid=');
+  const hasGclid = !!params['gclid'];
   const referer = headerList.get('referer') || '';
 
   const lp = await getLandingPage();
-  const partners = await fetchPartners( isMobile, hasGclid, referer);
+  const partners = await fetchPartners(isMobile, hasGclid, referer);
 
   return (
     <div className="flex flex-col min-h-screen">
