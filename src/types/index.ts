@@ -14,6 +14,8 @@ export interface ApiPageBrand {
   isBonusTextOverridden: boolean;
   overrideBonusText: string;
   overrideLink: string;
+  darkLogoUrl?: string;
+  lightLogoUrl?: string;
   brand: {
     id?: string;
     name: string;
@@ -21,6 +23,8 @@ export interface ApiPageBrand {
     darkLogo: string;
     bonusText: string;
     link: string;
+    darkLogoUrl?: string;
+    lightLogoUrl?: string;
   };
 }
 

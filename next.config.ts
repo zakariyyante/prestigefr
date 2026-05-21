@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/partners/:path*',
+        destination: 'https://qokbynptuwcxxogg.public.blob.vercel-storage.com/partners/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

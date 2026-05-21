@@ -28,7 +28,7 @@ export async function fetchPartners(landingPageId: string, isMobile: boolean, ha
     return filtered.map((pb, i) => {
       const bonusText = pb.isBonusTextOverridden ? pb.overrideBonusText : pb.brand?.bonusText;
       const partnerUrl = pb.overrideLink || pb.brand?.link;
-      const logo = pb.brand?.lightLogo || pb.brand?.darkLogo;
+      const logo = pb.lightLogoUrl || pb.darkLogoUrl || pb.brand?.lightLogoUrl || pb.brand?.darkLogoUrl || pb.brand?.lightLogo || pb.brand?.darkLogo;
 
       return {
         id: pb.id || String(i + 1),
@@ -56,6 +56,12 @@ export async function fetchPartners(landingPageId: string, isMobile: boolean, ha
 
 export function getImageUrl(filename: string | null | undefined): string {
   if (!filename) return "/placeholder.svg";
+
+  // Hide the absolute Vercel blob URL using our Next.js rewrite
+  if (filename.startsWith("https://qokbynptuwcxxogg.public.blob.vercel-storage.com/partners/")) {
+    return filename.replace("https://qokbynptuwcxxogg.public.blob.vercel-storage.com/partners/", "/partners/");
+  }
+
   if (filename.startsWith("http")) return filename;
   
   // Clean up filename just in case
