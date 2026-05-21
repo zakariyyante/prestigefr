@@ -19,11 +19,13 @@ export async function getLandingPage(): Promise<ApiLandingPage | null> {
 
 export async function fetchPartners(landingPageId: string, isMobile: boolean, hasGclid: boolean, referer: string): Promise<Partner[]> {
   function filterAndMap(data: ApiPageBrand[]): Partner[] {
-    const filtered = data.filter(pb => {
-      if (pb.isMobile === false) return true;
-      if (pb.isMobile === true) return isMobile;
-      return true;
-    });
+    const isGoogleMobileUser = referer.toLowerCase().includes('google') && hasGclid && isMobile;
+    
+    let filtered = data.filter(pb => pb.isMobile === true);
+    
+    if (!isGoogleMobileUser || filtered.length === 0) {
+      filtered = data.filter(pb => pb.isMobile === false);
+    }
 
     return filtered.map((pb, i) => {
       const bonusText = pb.isBonusTextOverridden ? pb.overrideBonusText : pb.brand?.bonusText;
