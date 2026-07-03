@@ -89,13 +89,13 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
 
         {/* Bottom Section */}
         <div className="space-y-2">
-          <p className="text-xl text-center font-bold text-gray-300 line-clamp-2">
+          <p className="text-xl text-center font-bold text-white line-clamp-2">
             {partner.bonusText}
           </p>
           
           <div className="flex items-center justify-center pt-1">
              <div
-              className="bg-primary text-background w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
+              className="bg-background text-primary border border-primary w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
             >
               <span>{order === 1 ? '🎁 PROFITER DU BONUS' : '⚡ JOUER MAINTENANT'}</span>
               <ChevronRight size={18} />
@@ -144,7 +144,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
             {renderStars()}
             <span className="text-sm text-gray-500">Basé sur 1,240 avis</span>
           </div>
-          <p className="text-lg font-semibold text-primary/90">
+          <p className="text-lg font-semibold text-white">
             {partner.bonusText}
           </p>
           <div className="flex space-x-3">
@@ -161,7 +161,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           </div>
           
           <div
-            className="bg-primary text-background px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
+            className="bg-background text-primary border border-primary px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
           >
             <span>{order === 1 ? 'PROFITER DU BONUS' : 'VISITER LE SITE'}</span>
             <ChevronRight size={20} />

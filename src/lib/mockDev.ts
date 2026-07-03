@@ -5,9 +5,9 @@ export const mockLandingPages: ApiLandingPage[] = [
     id: "lp_1",
     isActive: true,
     order: 1,
-    headText: "Les Meilleurs Sites de Paris Sportifs en France 2026",
-    headParagraph: "Découvrez notre sélection exclusive des plateformes les plus fiables et performantes pour vos paris sportifs.",
-    pageTitle: "Maître Guide - Meilleur Guide de Paris Sportifs",
+    headText: "Les Meilleures Plateformes de Jeux en France 2026",
+    headParagraph: "Découvrez notre sélection exclusive des plateformes les plus fiables et performantes, rigoureusement vérifiées pour vous.",
+    pageTitle: "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
   }
 ];
 
