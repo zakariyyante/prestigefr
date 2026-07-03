@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const lp = await getLandingPage();
   return {
-    title: lp?.pageTitle || "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
-    description: lp?.headParagraph || "Guide d'affiliation pour les meilleures plateformes de jeux en ligne agréées en France.",
+    title: lp?.pageTitle || "Maître Guide - Meilleur Guide de Paris Sportifs",
+    description: lp?.headParagraph || "Affiliate marketing for betting brands",
   };
 }
 
@@ -40,7 +40,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ [
       
       <main className="flex-grow">
         <Hero 
-          headText={lp?.headText || "Les Meilleures Plateformes de Jeux en France 2026"} 
+          headText={lp?.headText || "Les Meilleurs Sites de Paris Sportifs"} 
           headParagraph={lp?.headParagraph || "Découvrez notre sélection exclusive."} 
         />
         

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
-  description: "Guide d'affiliation pour les meilleures plateformes de jeux en ligne agréées en France.",
+  title: "Maître Guide - Meilleur Guide de Paris Sportifs",
+  description: "Affiliate marketing for betting brands",
 };
 
 export const revalidate = 0;

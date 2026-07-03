@@ -3,11 +3,9 @@
 :root {
   --background: #020617;
   --foreground: #f8fafc;
-  --primary: #c9a84c;
-  --primary-glow: rgba(201, 168, 76, 0.45);
-  --secondary: #e0c46a;
-  --accent: #00e5ff;
-  --accent-glow: rgba(0, 229, 255, 0.35);
+  --primary: #f59e0b;
+  --primary-glow: rgba(245, 158, 11, 0.4);
+  --secondary: #fbbf24;
   --panel: rgba(15, 23, 42, 0.8);
   --card: rgba(30, 41, 59, 0.7);
   --border: rgba(51, 65, 85, 0.5);
@@ -18,7 +16,6 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
   --color-panel: var(--panel);
   --color-card: var(--card);
   --color-border: var(--border);
@@ -26,15 +23,14 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(201, 168, 76, 0.2);
-  --shadow-cyan: 0 0 15px var(--accent-glow), 0 0 30px rgba(0, 229, 255, 0.15);
+  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(245, 158, 11, 0.2);
 }
 
 body {
   background: var(--background);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.15) 0%, transparent 50%),
-    url('/bgimage3.png');
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+    url('/bgimage.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -50,16 +46,6 @@ body {
 .neon-text {
   color: var(--primary);
   text-shadow: 0 0 5px var(--primary-glow);
-}
-
-.cyan-border {
-  border: 1px solid var(--accent);
-  box-shadow: 0 0 6px var(--accent-glow);
-}
-
-.cyan-text {
-  color: var(--accent);
-  text-shadow: 0 0 6px var(--accent-glow);
 }
 
 /* Custom scrollbar for horizontal mobile badges */

@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Est-il légal de parier en ligne en France ?",
-    a: "Oui, à condition d'utiliser des sites agréés par l'Autorité Nationale des Jeux (ANJ). Tous les sites présentés sur ChoixRoyal sont rigoureusement vérifiés."
+    a: "Oui, à condition d'utiliser des sites agréés par l'Autorité Nationale des Jeux (ANJ). Tous les sites présentés sur Maître Guide sont rigoureusement vérifiés."
   },
   {
     q: "Comment retirer mes gains ?",
