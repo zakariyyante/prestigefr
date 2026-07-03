@@ -33,7 +33,7 @@ export default function Hero({ headText, headParagraph }: HeroProps) {
           className="text-2xl md:text-6xl font-extrabold mb-2 tracking-tight leading-tight"
         >
           {headText.split(' ').map((word, i) => (
-            <span key={i} className={i >= headText.split(' ').length - 2 ? "neon-text" : ""}>
+            <span key={i} className={i >= headText.split(' ').length - 2 ? "red-neon-text" : ""}>
               {word}{' '}
             </span>
           ))}

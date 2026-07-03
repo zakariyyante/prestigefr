@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
-  description: "Guide d'affiliation pour les meilleures plateformes de jeux en ligne agréées en France.",
+  title: "MajestiaFR - Les Meilleures Plateformes de Jeux en France",
+  description: "Guide de référence pour les meilleures plateformes de jeux en ligne agréées en France.",
 };
 
 export const revalidate = 0;

@@ -11,15 +11,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <Image 
-              src="/choixroyal_icon.jpg" 
-              alt="ChoixRoyal" 
+              src="/majestiafr_icon.jpg" 
+              alt="MajestiaFR" 
               width={280} 
               height={80} 
               className="h-20 w-auto object-contain"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
-              Votre partenaire de confiance pour identifier les meilleures plateformes de jeux en ligne en France. 
-              Nous analysons et comparons les opérateurs agréés pour vous offrir une expérience sécurisée et éclairée.
+              Votre référence de confiance pour découvrir les meilleures plateformes de jeux en ligne en France. 
+              Nous évaluons et comparons les opérateurs agréés pour vous offrir une expérience sécurisée et éclairée.
             </p>
           </div>
 
@@ -64,11 +64,11 @@ export default function Footer() {
               <span className="font-bold text-gray-300">Divulgation d'affiliation :</span> Nous pouvons percevoir une commission lorsque les utilisateurs s'inscrivent via des liens sur notre site web.
             </p>
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Sélection des meilleures plateformes :</span> Nous référençons uniquement les opérateurs tiers agréés offrant les meilleures conditions de jeu. Aucun service n'est fourni directement par ChoixRoyal.
+              <span className="font-bold text-gray-300">Sélection des meilleures plateformes :</span> Nous référençons uniquement les opérateurs tiers agréés offrant les meilleures conditions de jeu. Aucun service n'est fourni directement par MajestiaFR.
             </p>
           </div>
           <p className="text-gray-500 text-xs">
-            © {currentYear} ChoixRoyal. Tous droits réservés. Les paris sportifs sont interdits aux mineurs.
+            © {currentYear} MajestiaFR. Tous droits réservés. Les jeux en ligne sont interdits aux mineurs.
           </p>
           <div className="bg-panel/50 p-4 rounded-lg border border-border/50 text-[10px] text-gray-400 max-w-4xl mx-auto leading-relaxed">
             🔞 ATTENTION : Toute personne souhaitant faire l'objet d'une interdiction de jeux doit le faire elle-même auprès du ministère de l'intérieur. 

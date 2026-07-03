@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const lp = await getLandingPage();
   return {
-    title: lp?.pageTitle || "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
-    description: lp?.headParagraph || "Guide d'affiliation pour les meilleures plateformes de jeux en ligne agréées en France.",
+    title: lp?.pageTitle || "MajestiaFR - Les Meilleures Plateformes de Jeux en France",
+    description: lp?.headParagraph || "Guide de référence pour les meilleures plateformes de jeux en ligne agréées en France.",
   };
 }
 

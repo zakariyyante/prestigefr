@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-black mb-8 neon-text">Contactez-nous</h1>
+        <h1 className="text-4xl font-black mb-8 red-neon-text">Contactez-nous</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-300">
@@ -20,7 +20,7 @@ export default function Contact() {
                 <span className="text-primary text-2xl">📧</span>
                 <div>
                   <h4 className="font-bold">Email</h4>
-                  <p className="text-sm text-gray-400">contact@maitre-guide.com</p>
+                  <p className="text-sm text-gray-400">contact@majestiafr.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 p-4 bg-panel border border-border rounded-xl">

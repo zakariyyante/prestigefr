@@ -9,7 +9,7 @@ export default function Tips() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow max-w-7xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-black mb-12 text-center neon-text">Conseils de Paris Sportifs</h1>
+        <h1 className="text-4xl font-black mb-12 text-center red-neon-text">Conseils de Pronostics Sportifs</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-card border border-border p-8 rounded-2xl space-y-4">
@@ -18,7 +18,7 @@ export default function Tips() {
             </div>
             <h3 className="text-2xl font-bold">Gérez votre Bankroll</h3>
             <p className="text-gray-400">
-              Ne pariez jamais plus que ce que vous pouvez vous permettre de perdre. Divisez votre capital en unités et ne misez qu'un petit pourcentage (1-5%) sur chaque pari.
+              Ne misez jamais plus que ce que vous pouvez vous permettre de perdre. Divisez votre capital en unités et n'engagez qu'un petit pourcentage (1-5%) sur chaque mise.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function Tips() {
             </div>
             <h3 className="text-2xl font-bold">Analysez les Statistiques</h3>
             <p className="text-gray-400">
-              Ne pariez pas sur votre équipe de cœur. Utilisez des données objectives : forme récente, blessures, historique des confrontations et enjeux du match.
+              Ne misez pas sur votre équipe de cœur. Utilisez des données objectives : forme récente, blessures, historique des confrontations et enjeux du match.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function Tips() {
             </div>
             <h3 className="text-2xl font-bold">Évitez les Combinés Trop Longs</h3>
             <p className="text-gray-400">
-              Plus vous ajoutez de matchs, plus le risque augmente de manière exponentielle. Privilégiez les paris simples ou les combinés de 2-3 matchs maximum.
+              Plus vous ajoutez de matchs, plus le risque augmente de manière exponentielle. Privilégiez les sélections simples ou les combinés de 2-3 matchs maximum.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <BookOpen size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Apprenez les Types de Paris</h3>
+            <h3 className="text-2xl font-bold">Maîtrisez les Types de Mises</h3>
             <p className="text-gray-400">
               Over/Under, Handicap Asiatique, Double Chance... Maîtriser les différents marchés vous permet de trouver de la valeur là où les autres ne regardent pas.
             </p>

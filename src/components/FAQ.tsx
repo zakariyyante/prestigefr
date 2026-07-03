@@ -5,16 +5,16 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    q: "Comment choisir le meilleur site de paris sportifs ?",
-    a: "Le choix dépend de plusieurs facteurs : la licence (ANJ en France), la qualité des cotes, la diversité des sports proposés, et bien sûr la générosité des bonus de bienvenue."
+    q: "Comment choisir la meilleure plateforme de jeux en ligne ?",
+    a: "Le choix dépend de plusieurs facteurs : la licence (ANJ en France), la qualité des cotes, la diversité des sports proposés, et bien sûr la générosité des offres de bienvenue."
   },
   {
-    q: "Les bonus de bienvenue sont-ils vraiment avantageux ?",
-    a: "Oui, ils permettent de commencer avec un capital plus important. Cependant, lisez toujours les conditions d'utilisation (wagering) avant de vous inscrier."
+    q: "Les offres de bienvenue sont-elles vraiment avantageuses ?",
+    a: "Oui, elles permettent de démarrer avec un capital plus conséquent. Cependant, lisez toujours les conditions d'utilisation (wagering) avant de vous inscrire."
   },
   {
-    q: "Est-il légal de parier en ligne en France ?",
-    a: "Oui, à condition d'utiliser des sites agréés par l'Autorité Nationale des Jeux (ANJ). Tous les sites présentés sur ChoixRoyal sont rigoureusement vérifiés."
+    q: "Est-il légal de jouer en ligne en France ?",
+    a: "Oui, à condition d'utiliser des plateformes agréées par l'Autorité Nationale des Jeux (ANJ). Tous les sites présentés sur MajestiaFR sont rigoureusement vérifiés."
   },
   {
     q: "Comment retirer mes gains ?",

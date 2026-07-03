@@ -95,7 +95,10 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           
           <div className="flex items-center justify-center pt-1">
              <div
-              className="bg-background text-primary border border-primary w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
+              className={order === 1
+                ? "bg-red-600 text-[#0055ff] border border-red-500 w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-[0_0_15px_rgba(220,38,38,0.5)] transition-transform active:scale-95"
+                : "bg-background text-primary border border-primary w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
+              }
             >
               <span>{order === 1 ? '🎁 PROFITER DU BONUS' : '⚡ JOUER MAINTENANT'}</span>
               <ChevronRight size={18} />
@@ -161,8 +164,10 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           </div>
           
           <div
-            className="bg-background text-primary border border-primary px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
-          >
+            className={order === 1
+              ? "bg-red-600 text-[#ffffff] border border-red-500 px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:scale-105 transition-all"
+              : "bg-background text-primary border border-primary px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
+            }          >
             <span>{order === 1 ? 'PROFITER DU BONUS' : 'VISITER LE SITE'}</span>
             <ChevronRight size={20} />
           </div>

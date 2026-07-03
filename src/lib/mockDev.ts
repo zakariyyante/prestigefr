@@ -7,7 +7,7 @@ export const mockLandingPages: ApiLandingPage[] = [
     order: 1,
     headText: "Les Meilleures Plateformes de Jeux en France 2026",
     headParagraph: "Découvrez notre sélection exclusive des plateformes les plus fiables et performantes, rigoureusement vérifiées pour vous.",
-    pageTitle: "ChoixRoyal - Les Meilleures Plateformes de Jeux en France",
+    pageTitle: "MajestiaFR - Les Meilleures Plateformes de Jeux en France",
   }
 ];
 

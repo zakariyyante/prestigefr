@@ -34,7 +34,7 @@ body {
   background: var(--background);
   background-image: 
     radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.15) 0%, transparent 50%),
-    url('/bgimage3.png');
+    url('/bgimage4.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -50,6 +50,11 @@ body {
 .neon-text {
   color: var(--primary);
   text-shadow: 0 0 5px var(--primary-glow);
+}
+
+.red-neon-text {
+  color: #c0392b;
+  text-shadow: 0 0 8px rgba(192, 57, 43, 0.7), 0 0 20px rgba(192, 57, 43, 0.4);
 }
 
 .cyan-border {
