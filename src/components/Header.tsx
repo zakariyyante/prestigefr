@@ -16,10 +16,10 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#050508] border-b border-border shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-[#0d0420] border-b border-border shadow-md">
       {/* 18+ Disclaimer */}
       <div className="bg-primary text-background text-[10px] font-bold py-1 px-4 text-center uppercase tracking-widest">
-        🔞 Jouer comporte des risques : endettement, dépendance... Appelez le 09 74 75 13 13 (appel non surtaxé)
+        🔞 Le jeu comporte des risques : surendettement, dépendance... Appelez le 09 74 75 13 13 (appel non surtaxé)
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,8 +27,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image 
-                src="/majestiafr_icon.jpg" 
-                alt="MajestiaFR" 
+                src="/montelleFr_Icon.png" 
+                alt="MonteleFR" 
                 width={220} 
                 height={60} 
                 className="h-14 w-auto object-contain"
@@ -64,7 +64,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#050508] border-b border-border">
+        <div className="md:hidden bg-[#0d0420] border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

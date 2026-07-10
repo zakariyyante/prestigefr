@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const lp = await getLandingPage();
   return {
-    title: lp?.pageTitle || "MajestiaFR - Les Meilleures Plateformes de Jeux en France",
-    description: lp?.headParagraph || "Guide de référence pour les meilleures plateformes de jeux en ligne agréées en France.",
+    title: lp?.pageTitle || "MonteleFR - Les Meilleures Plateformes de Jeux en France",
+    description: lp?.headParagraph || "Votre source d'information sur les plateformes de jeux en ligne homologuées opérant en France.",
   };
 }
 

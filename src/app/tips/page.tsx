@@ -16,9 +16,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <Lightbulb size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Gérez votre Bankroll</h3>
+            <h3 className="text-2xl font-bold">Pilotez votre Bankroll</h3>
             <p className="text-gray-400">
-              Ne misez jamais plus que ce que vous pouvez vous permettre de perdre. Divisez votre capital en unités et n'engagez qu'un petit pourcentage (1-5%) sur chaque mise.
+              Ne dépassez jamais les limites que vous vous êtes fixées. Fractionnez votre budget en unités et n'allouez qu'une fraction raisonnable (1–5 %) à chaque pronostic.
             </p>
           </div>
 
@@ -26,9 +26,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <TrendingUp size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Analysez les Statistiques</h3>
+            <h3 className="text-2xl font-bold">Fondez-vous sur les Données</h3>
             <p className="text-gray-400">
-              Ne misez pas sur votre équipe de cœur. Utilisez des données objectives : forme récente, blessures, historique des confrontations et enjeux du match.
+              Écartez l'affect et appuyez-vous sur des indicateurs concrets : état de forme actuel, absences sur blessure, historique des duels directs et contexte de la rencontre.
             </p>
           </div>
 
@@ -36,9 +36,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <ShieldAlert size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Évitez les Combinés Trop Longs</h3>
+            <h3 className="text-2xl font-bold">Limitez la Longueur des Accumulateurs</h3>
             <p className="text-gray-400">
-              Plus vous ajoutez de matchs, plus le risque augmente de manière exponentielle. Privilégiez les sélections simples ou les combinés de 2-3 matchs maximum.
+              Chaque événement supplémentaire multiplie les risques de manière exponentielle. Préférez les mises uniques ou des accumulateurs de 2 à 3 résultats tout au plus.
             </p>
           </div>
 
@@ -46,17 +46,17 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <BookOpen size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Maîtrisez les Types de Mises</h3>
+            <h3 className="text-2xl font-bold">Explorez les Marchés Disponibles</h3>
             <p className="text-gray-400">
-              Over/Under, Handicap Asiatique, Double Chance... Maîtriser les différents marchés vous permet de trouver de la valeur là où les autres ne regardent pas.
+              Over/Under, Handicap Asiatique, Double Chance... Élargir votre connaissance des marchés vous ouvre des opportunités que la majorité des joueurs ne perçoit pas.
             </p>
           </div>
         </div>
 
         <div className="mt-16 bg-panel border border-primary/20 p-8 rounded-3xl text-center">
-          <h2 className="text-2xl font-bold mb-4">Jeu Responsable</h2>
+          <h2 className="text-2xl font-bold mb-4">Pratiquez de Façon Responsable</h2>
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-            Le jeu doit rester un divertissement. Si vous sentez que vous perdez le contrôle, n'hésitez pas à demander de l'aide.
+            Le jeu doit avant tout rester un plaisir. Si vous constatez que vous en perdez la maîtrise, n'attendez pas pour solliciter un accompagnement adapté.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GamCare (UK)</a>

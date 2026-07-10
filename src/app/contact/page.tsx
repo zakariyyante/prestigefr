@@ -12,15 +12,15 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-300">
-              Vous avez une question, une suggestion ou vous souhaitez signaler un problème avec l'un des sites référencés ? 
-              Notre équipe est à votre écoute.
+              Une interrogation, une proposition d'amélioration ou un signalement concernant l'une des plateformes répertoriées ? 
+              Notre équipe est disponible pour vous répondre dans les meilleurs délais.
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-4 p-4 bg-panel border border-border rounded-xl">
                 <span className="text-primary text-2xl">📧</span>
                 <div>
                   <h4 className="font-bold">Email</h4>
-                  <p className="text-sm text-gray-400">contact@majestiafr.com</p>
+                  <p className="text-sm text-gray-400">contact@montelefr.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 p-4 bg-panel border border-border rounded-xl">
@@ -36,7 +36,7 @@ export default function Contact() {
           <form className="space-y-4 bg-card p-6 rounded-2xl border border-border">
             <div>
               <label className="block text-sm font-medium mb-1">Nom</label>
-              <input type="text" className="w-full bg-panel border border-border rounded-lg p-3 focus:border-primary outline-none transition-colors" placeholder="Votre nom" />
+              <input type="text" className="w-full bg-panel border border-border rounded-lg p-3 focus:border-primary outline-none transition-colors" placeholder="Votre nom complet" />
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Email</label>
@@ -44,10 +44,10 @@ export default function Contact() {
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Message</label>
-              <textarea className="w-full bg-panel border border-border rounded-lg p-3 h-32 focus:border-primary outline-none transition-colors" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+              <textarea className="w-full bg-panel border border-border rounded-lg p-3 h-32 focus:border-primary outline-none transition-colors" placeholder="En quoi pouvons-nous vous être utiles ?"></textarea>
             </div>
             <button type="submit" className="w-full bg-primary text-background font-bold py-3 rounded-lg shadow-neon hover:scale-[1.02] transition-all">
-              Envoyer le message
+              Transmettre le message
             </button>
           </form>
         </div>

@@ -5,21 +5,21 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#050508] border-t border-border pt-12 pb-6 mt-auto">
+    <footer className="bg-[#0d0420] border-t border-border pt-12 pb-6 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand Info */}
           <div className="space-y-4">
             <Image 
-              src="/majestiafr_icon.jpg" 
-              alt="MajestiaFR" 
+              src="/montelleFr_Icon.png" 
+              alt="MonteleFR" 
               width={280} 
               height={80} 
               className="h-20 w-auto object-contain"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
-              Votre référence de confiance pour découvrir les meilleures plateformes de jeux en ligne en France. 
-              Nous évaluons et comparons les opérateurs agréés pour vous offrir une expérience sécurisée et éclairée.
+              Votre repère incontournable pour explorer les meilleures plateformes de jeux en ligne disponibles en France. 
+              Nous passons au crible les opérateurs agréés afin de vous orienter vers une expérience fiable et éclairée.
             </p>
           </div>
 
@@ -38,11 +38,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground">Jeu Responsable</h4>
             <p className="text-gray-400 text-sm">
-              Le jeu doit rester un plaisir. Jouez de manière responsable. 
-              Pour obtenir de l'aide, contactez :
+              Le jeu doit demeurer un loisir. Adoptez une pratique responsable. 
+              En cas de difficulté, faites appel à :
             </p>
             <div className="flex flex-wrap gap-4 items-center">
-               <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:[filter:drop-shadow(0_0_6px_rgba(0,229,255,0.5))] transition-all">
+               <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:[filter:drop-shadow(0_0_6px_rgba(147,51,234,0.5))] transition-all">
                  <Image src="/anj.png" alt="ANJ" width={80} height={30} className="h-8 w-auto" />
                </a>
                <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
@@ -61,18 +61,18 @@ export default function Footer() {
         <div className="border-t border-border pt-8 text-center space-y-4">
           <div className="max-w-4xl mx-auto space-y-2 mb-4">
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Divulgation d'affiliation :</span> Nous pouvons percevoir une commission lorsque les utilisateurs s'inscrivent via des liens sur notre site web.
+              <span className="font-bold text-gray-300">Transparence sur l'affiliation :</span> Une commission peut nous être versée lorsqu'un utilisateur s'inscrit via l'un de nos liens partenaires.
             </p>
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Sélection des meilleures plateformes :</span> Nous référençons uniquement les opérateurs tiers agréés offrant les meilleures conditions de jeu. Aucun service n'est fourni directement par MajestiaFR.
+              <span className="font-bold text-gray-300">Sélection rigoureuse :</span> Nous ne mettons en avant que des opérateurs tiers agréés proposant les conditions les plus avantageuses. MonteleFR ne fournit aucun service de jeu directement.
             </p>
           </div>
           <p className="text-gray-500 text-xs">
-            © {currentYear} MajestiaFR. Tous droits réservés. Les jeux en ligne sont interdits aux mineurs.
+            © {currentYear} MonteleFR. Tous droits réservés. Les jeux en ligne sont interdits aux mineurs.
           </p>
           <div className="bg-panel/50 p-4 rounded-lg border border-border/50 text-[10px] text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            🔞 ATTENTION : Toute personne souhaitant faire l'objet d'une interdiction de jeux doit le faire elle-même auprès du ministère de l'intérieur. 
-            Cette interdiction est valable dans les établissements de jeux agréés, dans les clubs de jeux, sur les plateformes de jeux en ligne exploitées par les opérateurs agréés en France.
+            🔞 AVERTISSEMENT : Toute personne désirant s'auto-exclure des jeux doit en faire la demande directement auprès du ministère de l'intérieur. 
+            Cette mesure s'applique aux établissements agréés, aux clubs de jeux et aux plateformes en ligne opérant sous licence française.
           </div>
         </div>
       </div>

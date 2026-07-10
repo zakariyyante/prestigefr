@@ -10,17 +10,17 @@ export default function Terms() {
       <main className="flex-grow max-w-4xl mx-auto px-4 py-16">
         <h1 className="text-4xl font-black mb-8 neon-text">Conditions d'Utilisation</h1>
         <div className="prose prose-invert max-w-none space-y-6 text-gray-400 text-sm">
-          <p>Dernière mise à jour : Mai 2026</p>
-          <h2 className="text-xl font-bold text-white">1. Acceptation des conditions</h2>
-          <p>En accédant à MajestiaFR, vous acceptez d'être lié par les présentes conditions d'utilisation et toutes les lois et réglementations applicables.</p>
-          <h2 className="text-xl font-bold text-white">2. Utilisation du site</h2>
-          <p>Ce site est destiné exclusivement aux personnes âgées de 18 ans et plus. L'accès est interdit aux mineurs.</p>
-          <h2 className="text-xl font-bold text-white">3. Nature du service</h2>
-          <p>MajestiaFR est un site d'affiliation. Nous ne sommes pas un opérateur de jeux. Nous fournissons des informations et des liens vers des plateformes tierces.</p>
-          <h2 className="text-xl font-bold text-white">4. Responsabilité</h2>
-          <p>Nous nous efforçons de fournir des informations exactes, mais nous ne garantissons pas l'absence d'erreurs. Les jeux d'argent en ligne comportent des risques. Nous ne sommes pas responsables des pertes financières subies sur les plateformes tierces.</p>
-          <h2 className="text-xl font-bold text-white">5. Propriété intellectuelle</h2>
-          <p>Le contenu de ce site est la propriété de MajestiaFR. Toute reproduction sans autorisation est interdite.</p>
+          <p>Dernière révision : Mai 2026</p>
+          <h2 className="text-xl font-bold text-white">1. Acceptation des présentes conditions</h2>
+          <p>L'accès à MonteleFR implique votre adhésion aux présentes conditions d'utilisation ainsi qu'au respect de l'ensemble des dispositions légales en vigueur.</p>
+          <h2 className="text-xl font-bold text-white">2. Public concerné</h2>
+          <p>Ce site s'adresse exclusivement aux personnes majeures, âgées de 18 ans révolus. Toute consultation par un mineur est formellement interdite.</p>
+          <h2 className="text-xl font-bold text-white">3. Périmètre du service</h2>
+          <p>MonteleFR opère en tant que plateforme d'affiliation et ne dispose d'aucune licence d'opérateur de jeux. Nous mettons à disposition des informations et des redirections vers des sites tiers indépendants.</p>
+          <h2 className="text-xl font-bold text-white">4. Limitation de responsabilité</h2>
+          <p>Bien que nous mettions tout en œuvre pour publier des informations fiables, nous ne pouvons en garantir l'exactitude absolue. Les jeux en ligne impliquent des risques financiers. MonteleFR décline toute responsabilité quant aux pertes occasionnées sur les plateformes partenaires.</p>
+          <h2 className="text-xl font-bold text-white">5. Droits de propriété intellectuelle</h2>
+          <p>L'ensemble du contenu publié sur ce site appartient à MonteleFR. Toute reproduction ou diffusion sans autorisation préalable est strictement prohibée.</p>
         </div>
       </main>
       <Footer />

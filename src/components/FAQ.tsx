@@ -5,20 +5,20 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    q: "Comment choisir la meilleure plateforme de jeux en ligne ?",
-    a: "Le choix dépend de plusieurs facteurs : la licence (ANJ en France), la qualité des cotes, la diversité des sports proposés, et bien sûr la générosité des offres de bienvenue."
+    q: "Quels critères retenir pour sélectionner une plateforme de jeux en ligne ?",
+    a: "Plusieurs éléments entrent en jeu : l'agrément ANJ, la compétitivité des cotes, l'étendue des disciplines couvertes, et la générosité des offres promotionnelles proposées aux nouveaux inscrits."
   },
   {
-    q: "Les offres de bienvenue sont-elles vraiment avantageuses ?",
-    a: "Oui, elles permettent de démarrer avec un capital plus conséquent. Cependant, lisez toujours les conditions d'utilisation (wagering) avant de vous inscrire."
+    q: "Les offres de bienvenue valent-elles vraiment la peine ?",
+    a: "Absolument, elles vous permettent de démarrer avec un solde plus conséquent. Pensez toutefois à bien lire les conditions associées (notamment le wagering) avant de finaliser votre inscription."
   },
   {
-    q: "Est-il légal de jouer en ligne en France ?",
-    a: "Oui, à condition d'utiliser des plateformes agréées par l'Autorité Nationale des Jeux (ANJ). Tous les sites présentés sur MajestiaFR sont rigoureusement vérifiés."
+    q: "Le jeu en ligne est-il autorisé en France ?",
+    a: "Oui, sous réserve d'utiliser des plateformes homologuées par l'Autorité Nationale des Jeux (ANJ). Chaque site présenté sur MonteleFR fait l'objet d'une vérification préalable stricte."
   },
   {
-    q: "Comment retirer mes gains ?",
-    a: "Les retraits se font généralement par virement bancaire sur le compte vérifié lors de votre inscription. Les délais varient de 24h à quelques jours selon l'opérateur."
+    q: "Comment procéder pour encaisser mes gains ?",
+    a: "Les retraits s'effectuent en règle générale par virement sur le compte bancaire enregistré lors de l'inscription. Les délais de traitement s'échelonnent de quelques heures à quelques jours selon la plateforme choisie."
   }
 ];
 
