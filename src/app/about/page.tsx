@@ -8,23 +8,23 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-black mb-8 red-neon-text">À Propos de MonteleFR</h1>
+        <h1 className="text-4xl font-black mb-8 red-neon-text">À Propos de BiarritzFR</h1>
         <div className="prose prose-invert max-w-none space-y-6 text-gray-300">
           <p>
-            MonteleFR est le fruit d'un attachement profond au sport et d'une volonté ferme de démystifier l'univers des plateformes de jeux en ligne. 
-            Depuis 2024, notre équipe de spécialistes scrute le marché français au quotidien pour vous faire découvrir les meilleures opportunités disponibles.
+            BiarritzFR est né d'une passion pour le sport et d'une ambition claire : rendre l'univers des plateformes de jeux en ligne plus lisible, plus transparent et plus accessible à tous. 
+            Depuis 2024, nos spécialistes scrutent le marché français chaque jour pour vous signaler les meilleures opportunités disponibles.
           </p>
-          <h2 className="text-2xl font-bold text-white mt-8">Notre Engagement</h2>
+          <h2 className="text-2xl font-bold text-white mt-8">Notre Raison d'Être</h2>
           <p>
-            Nous nous donnons pour objectif de vous transmettre les ressources et les informations indispensables pour jouer en pleine connaissance de cause et de façon responsable. 
-            Chez nous, la maîtrise du sujet est le premier atout du joueur averti.
+            Nous avons pour vocation de vous armer des connaissances et des outils nécessaires pour aborder les jeux en ligne avec lucidité et discernement. 
+            Chez BiarritzFR, nous sommes convaincus qu'un joueur bien informé prend de meilleures décisions.
           </p>
-          <h2 className="text-2xl font-bold text-white mt-8">Ce qui nous distingue</h2>
+          <h2 className="text-2xl font-bold text-white mt-8">Nos Points Forts</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Neutralité totale vis-à-vis des opérateurs référencés.</li>
-            <li>Clarté absolue sur nos méthodes d'évaluation.</li>
-            <li>Attachement sincère à la pratique responsable du jeu.</li>
-            <li>Actualisation quotidienne des promotions et des cotes.</li>
+            <li>Indépendance éditoriale complète, sans influence des opérateurs.</li>
+            <li>Critères d'évaluation publics et vérifiables par tous.</li>
+            <li>Engagement ferme en faveur du jeu responsable.</li>
+            <li>Mise à jour régulière des offres, des cotes et des classements.</li>
           </ul>
         </div>
       </main>

@@ -12,34 +12,34 @@ export default function Footer() {
           <div className="space-y-4">
             <Image 
               src="/montelleFr_Icon.png" 
-              alt="MonteleFR" 
+              alt="BiarritzFR" 
               width={280} 
               height={80} 
               className="h-20 w-auto object-contain"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
-              Votre repère incontournable pour explorer les meilleures plateformes de jeux en ligne disponibles en France. 
-              Nous passons au crible les opérateurs agréés afin de vous orienter vers une expérience fiable et éclairée.
+              Le guide incontournable pour identifier et comparer les meilleures plateformes de jeux en ligne disponibles sur le marché français. 
+              Chaque opérateur agréé est passé au crible pour vous garantir une expérience de jeu sûre et optimale.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">Liens Rapides</h4>
+            <h4 className="text-lg font-semibold text-foreground">Navigation</h4>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-400 hover:text-primary transition-colors text-sm">À Propos</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-primary transition-colors text-sm">Contactez-nous</Link></li>
-              <li><Link href="/privacy" className="text-gray-400 hover:text-primary transition-colors text-sm">Politique de Confidentialité</Link></li>
-              <li><Link href="/terms" className="text-gray-400 hover:text-primary transition-colors text-sm">Conditions d'Utilisation</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-primary transition-colors text-sm">Qui Sommes-Nous</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-primary transition-colors text-sm">Nous Écrire</Link></li>
+              <li><Link href="/privacy" className="text-gray-400 hover:text-primary transition-colors text-sm">Confidentialité</Link></li>
+              <li><Link href="/terms" className="text-gray-400 hover:text-primary transition-colors text-sm">Mentions Légales</Link></li>
             </ul>
           </div>
 
           {/* Responsibility */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-foreground">Jeu Responsable</h4>
+            <h4 className="text-lg font-semibold text-foreground">Pratique Responsable</h4>
             <p className="text-gray-400 text-sm">
-              Le jeu doit demeurer un loisir. Adoptez une pratique responsable. 
-              En cas de difficulté, faites appel à :
+              Le jeu doit toujours rester un divertissement. Fixez-vous des limites et respectez-les. 
+              En cas de besoin, ces organismes peuvent vous accompagner :
             </p>
             <div className="flex flex-wrap gap-4 items-center">
                <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:[filter:drop-shadow(0_0_6px_rgba(147,51,234,0.5))] transition-all">
@@ -61,18 +61,18 @@ export default function Footer() {
         <div className="border-t border-border pt-8 text-center space-y-4">
           <div className="max-w-4xl mx-auto space-y-2 mb-4">
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Transparence sur l'affiliation :</span> Une commission peut nous être versée lorsqu'un utilisateur s'inscrit via l'un de nos liens partenaires.
+              <span className="font-bold text-gray-300">Rémunération par affiliation :</span> Nous sommes susceptibles de percevoir une rémunération lorsqu'un visiteur s'inscrit sur une plateforme partenaire via nos liens.
             </p>
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Sélection rigoureuse :</span> Nous ne mettons en avant que des opérateurs tiers agréés proposant les conditions les plus avantageuses. MonteleFR ne fournit aucun service de jeu directement.
+              <span className="font-bold text-gray-300">Indépendance éditoriale :</span> Notre classement ne retient que des opérateurs tiers agréés garantissant les conditions les plus favorables. BiarritzFR n'est pas un opérateur et ne propose aucun service de jeu en direct.
             </p>
           </div>
           <p className="text-gray-500 text-xs">
-            © {currentYear} MonteleFR. Tous droits réservés. Les jeux en ligne sont interdits aux mineurs.
+            © {currentYear} BiarritzFR. Tous droits réservés. L'accès aux jeux en ligne est strictement réservé aux personnes majeures.
           </p>
           <div className="bg-panel/50 p-4 rounded-lg border border-border/50 text-[10px] text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            🔞 AVERTISSEMENT : Toute personne désirant s'auto-exclure des jeux doit en faire la demande directement auprès du ministère de l'intérieur. 
-            Cette mesure s'applique aux établissements agréés, aux clubs de jeux et aux plateformes en ligne opérant sous licence française.
+            🔞 RAPPEL LÉGAL : Toute personne souhaitant s'exclure volontairement des jeux doit en faire la démarche auprès du ministère de l'intérieur. 
+            L'exclusion s'étend aux établissements agréés, aux clubs et aux plateformes de jeux en ligne sous licence française.
           </div>
         </div>
       </div>

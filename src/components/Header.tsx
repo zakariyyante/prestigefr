@@ -19,7 +19,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-[#0d0420] border-b border-border shadow-md">
       {/* 18+ Disclaimer */}
       <div className="bg-primary text-background text-[10px] font-bold py-1 px-4 text-center uppercase tracking-widest">
-        🔞 Le jeu comporte des risques : surendettement, dépendance... Appelez le 09 74 75 13 13 (appel non surtaxé)
+        🔞 Jouer peut engendrer des difficultés financières et une dépendance. Ligne d'écoute gratuite : 09 74 75 13 13
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,8 +27,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image 
-                src="/montelleFr_Icon.png" 
-                alt="MonteleFR" 
+                src="/biarritzFR_icon_transparent.png" 
+                alt="BiarritzFR" 
                 width={220} 
                 height={60} 
                 className="h-14 w-auto object-contain"

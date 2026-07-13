@@ -22,7 +22,7 @@ export default function Hero({ headText, headParagraph }: HeroProps) {
         >
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-300">
-            Mis à jour : Mai 2026
+            Actualisé : Juillet 2026
           </span>
         </motion.div>
         
@@ -56,15 +56,15 @@ export default function Hero({ headText, headParagraph }: HeroProps) {
         >
           <div className="flex items-center space-x-2 bg-panel/50 border border-border px-4 py-2 rounded-lg">
             <span className="text-primary">🛡️</span>
-            <span className="text-xs font-medium">Licence ANJ</span>
+            <span className="text-xs font-medium">Agréé ANJ</span>
           </div>
           <div className="flex items-center space-x-2 bg-panel/50 border border-border px-4 py-2 rounded-lg">
             <span className="text-primary">⚡</span>
-            <span className="text-xs font-medium">Paiements Rapides</span>
+            <span className="text-xs font-medium">Virements Express</span>
           </div>
           <div className="flex items-center space-x-2 bg-panel/50 border border-border px-4 py-2 rounded-lg">
             <span className="text-primary">🎁</span>
-            <span className="text-xs font-medium">Bonus Exclusifs</span>
+            <span className="text-xs font-medium">Promotions Exclusives</span>
           </div>
         </motion.div>
       </div>

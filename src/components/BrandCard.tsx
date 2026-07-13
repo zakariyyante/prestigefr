@@ -83,7 +83,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           <div className="flex flex-col items-end space-y-0.5">
             <span className="text-xl font-bold neon-text">{rating.toFixed(1)}</span>
             {renderStars()}
-            <span className="text-[9px] text-gray-500 uppercase tracking-tighter">1,240 votes</span>
+            <span className="text-[9px] text-gray-500 uppercase tracking-tighter">1 240 avis</span>
           </div>
         </div>
 
@@ -96,7 +96,7 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           <div className="flex items-center justify-center pt-1">
              <div
               className={order === 1
-                ? "bg-red-600 text-[#0055ff] border border-red-500 w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-[0_0_15px_rgba(220,38,38,0.5)] transition-transform active:scale-95"
+                ? "bg-gradient-to-r from-[#a855f7] via-[#c060ff] to-[#d090ff] text-white border border-[#d8a0ff] w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-[0_0_18px_rgba(168,85,247,0.9),0_0_35px_rgba(192,96,255,0.5)] transition-transform active:scale-95"
                 : "bg-background text-primary border border-primary w-full py-3.5 rounded-xl font-black text-sm flex items-center justify-center space-x-2 shadow-neon transition-transform active:scale-95"
               }
             >
@@ -145,14 +145,14 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
           <h3 className="text-xl font-bold text-foreground">{partner.name}</h3>
           <div className="flex items-center space-x-4">
             {renderStars()}
-            <span className="text-sm text-gray-500">Basé sur 1,240 avis</span>
+            <span className="text-sm text-gray-500">D'après 1 240 évaluations vérifiées</span>
           </div>
           <p className="text-lg font-semibold text-white">
             {partner.bonusText}
           </p>
           <div className="flex space-x-3">
-             <span className="text-[10px] bg-panel px-2 py-1 rounded border border-border text-gray-400">🛡️ Certifié</span>
-             <span className="text-[10px] bg-panel px-2 py-1 rounded border border-border text-gray-400">⚡ Retrait Rapide</span>
+             <span className="text-[10px] bg-panel px-2 py-1 rounded border border-border text-gray-400">🛡️ Accrédité</span>
+             <span className="text-[10px] bg-panel px-2 py-1 rounded border border-border text-gray-400">⚡ Paiement Express</span>
           </div>
         </div>
 
@@ -160,18 +160,18 @@ export default function BrandCard({ partner, order, isMobile }: BrandCardProps) 
         <div className="flex flex-col items-center justify-center space-y-4 px-8 border-l border-border">
           <div className="text-center">
             <span className="text-4xl font-black neon-text">{rating.toFixed(1)}</span>
-            <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Score Expert</p>
+            <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Note Experte</p>
           </div>
           
           <div
             className={order === 1
-              ? "bg-red-600 text-[#ffffff] border border-red-500 px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:scale-105 transition-all"
+              ? "bg-gradient-to-r from-[#a855f7] via-[#c060ff] to-[#d090ff] text-white border border-[#d8a0ff] px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-[0_0_18px_rgba(168,85,247,0.9),0_0_35px_rgba(192,96,255,0.5)] hover:scale-105 transition-all"
               : "bg-background text-primary border border-primary px-10 py-4 rounded-xl font-black text-lg flex items-center space-x-2 shadow-neon hover:scale-105 transition-all"
             }          >
             <span>{order === 1 ? 'PROFITER DU BONUS' : 'VISITER LE SITE'}</span>
             <ChevronRight size={20} />
           </div>
-          <p className="text-[10px] text-gray-500 italic">Termes & Conditions s'appliquent</p>
+          <p className="text-[10px] text-gray-500 italic">Conditions générales en vigueur</p>
         </div>
       </div>
     </a>

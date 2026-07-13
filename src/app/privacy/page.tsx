@@ -10,17 +10,17 @@ export default function Privacy() {
       <main className="flex-grow max-w-4xl mx-auto px-4 py-16">
         <h1 className="text-4xl font-black mb-8 neon-text">Politique de Confidentialité</h1>
         <div className="prose prose-invert max-w-none space-y-6 text-gray-400 text-sm">
-          <p>Dernière révision : Mai 2026</p>
-          <h2 className="text-xl font-bold text-white">1. Données collectées</h2>
-          <p>Lors de votre navigation sur notre site, nous recueillons certaines informations telles que votre adresse IP, le type de navigateur utilisé et les pages que vous consultez, notamment via des cookies de suivi.</p>
-          <h2 className="text-xl font-bold text-white">2. Usage des données</h2>
-          <p>Les données que nous collectons servent à perfectionner votre expérience de navigation, à mesurer l'audience de notre site et à garantir le bon fonctionnement de notre programme d'affiliation.</p>
-          <h2 className="text-xl font-bold text-white">3. Utilisation des cookies</h2>
-          <p>Des cookies sont déposés afin de mémoriser vos préférences et de tracer les interactions avec nos liens partenaires. Vous conservez la possibilité de gérer ces paramètres depuis notre bandeau de consentement.</p>
-          <h2 className="text-xl font-bold text-white">4. Transmission à des tiers</h2>
-          <p>Vos données personnelles ne sont ni vendues ni cédées à des organismes tiers. En revanche, en suivant un lien vers un site partenaire, vous relevez dès lors de la politique de confidentialité de cet opérateur.</p>
-          <h2 className="text-xl font-bold text-white">5. Droits des utilisateurs</h2>
-          <p>Conformément au RGPD, vous bénéficiez d'un droit d'accès, de modification et de suppression de vos données personnelles. Adressez-nous votre demande pour tout exercice de ces droits.</p>
+          <p>Dernière mise à jour : Juillet 2026</p>
+          <h2 className="text-xl font-bold text-white">1. Informations collectées</h2>
+          <p>À chaque visite sur notre site, nous pouvons être amenés à recueillir certaines données techniques telles que votre adresse IP, votre type de navigateur et les pages que vous avez visitées, notamment via des témoins de connexion (cookies).</p>
+          <h2 className="text-xl font-bold text-white">2. Finalités du traitement</h2>
+          <p>Les informations collectées nous permettent d'optimiser votre navigation, d'analyser les statistiques de fréquentation et d'assurer le bon fonctionnement de notre programme de partenariat.</p>
+          <h2 className="text-xl font-bold text-white">3. Gestion des cookies</h2>
+          <p>Des cookies sont placés sur votre terminal afin de mémoriser vos préférences et de tracer les interactions avec nos liens partenaires. Vous pouvez à tout moment modifier vos choix depuis notre bandeau de consentement.</p>
+          <h2 className="text-xl font-bold text-white">4. Communication à des tiers</h2>
+          <p>Vos données personnelles ne font l'objet d'aucune cession ni revente. En revanche, en accédant à un site partenaire via nos liens, vous êtes soumis à la propre politique de confidentialité de cet opérateur.</p>
+          <h2 className="text-xl font-bold text-white">5. Exercice de vos droits</h2>
+          <p>En vertu du Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Contactez-nous pour toute demande en ce sens.</p>
         </div>
       </main>
       <Footer />
