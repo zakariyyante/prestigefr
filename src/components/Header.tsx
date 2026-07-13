@@ -16,55 +16,63 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#0d0420] border-b border-border shadow-md">
+    <header className="sticky top-0 z-50 w-full shadow-md">
+      {/* Top info strip */}
+      <div className="bg-[#0f2318] text-gray-300 text-[10px] py-1.5 px-4 text-center tracking-wider border-b border-[#1a3d28]">
+        <span className="hidden md:inline">Éditoriaux indépendants &nbsp;|&nbsp; Jeu responsable &nbsp;|&nbsp; Cadre réglementaire</span>
+        <span className="md:hidden">Éditoriaux indépendants · Jeu responsable</span>
+      </div>
+
       {/* 18+ Disclaimer */}
       <div className="bg-primary text-background text-[10px] font-bold py-1 px-4 text-center uppercase tracking-widest">
         🔞 Jouer peut engendrer des difficultés financières et une dépendance. Ligne d'écoute gratuite : 09 74 75 13 13
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image 
-                src="/biarritzFR_icon_transparent.png" 
-                alt="BiarritzFR" 
-                width={220} 
-                height={60} 
-                className="h-14 w-auto object-contain"
-                priority
-              />
-            </Link>
-          </div>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider"
-              >
-                {link.name}
+      <div className="bg-[#0c0906] border-b border-[rgba(180,130,40,0.2)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-14">
+            <div className="flex items-center">
+              <Link href="/" className="flex items-center space-x-2">
+                <Image 
+                  src="/montecarloFR_icon_transparent.png" 
+                  alt="MonteCarloFR" 
+                  width={220} 
+                  height={60} 
+                  className="h-14 w-auto object-contain"
+                  priority
+                />
               </Link>
-            ))}
-          </nav>
+            </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground p-2 focus:outline-none"
-            >
-              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
+            {/* Desktop Nav */}
+            <nav className="hidden md:flex space-x-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-foreground p-2 focus:outline-none"
+              >
+                {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0d0420] border-b border-border">
+        <div className="md:hidden bg-[#0c0906] border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

@@ -5,20 +5,20 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
-    q: "Sur quoi se baser pour choisir une plateforme de jeux en ligne sérieuse ?",
-    a: "Les critères essentiels sont : la possession d'une licence ANJ valide, la compétitivité des cotes proposées, la richesse du catalogue sportif, et l'attractivité des offres promotionnelles réservées aux nouveaux membres."
+    q: "Quels éléments prendre en compte pour sélectionner un opérateur de jeux en ligne fiable ?",
+    a: "Les points clés à examiner sont : la détention d'une licence ANJ en cours de validité, la compétitivité des quotations, la diversité du catalogue sportif disponible, et la générosité des promotions destinées aux nouveaux inscrits."
   },
   {
-    q: "Une offre de bienvenue peut-elle réellement faire la différence ?",
-    a: "Oui, sans conteste. Elle vous permet d'entamer votre expérience avec un capital de départ supérieur. Veillez cependant à analyser attentivement les conditions de mise (wagering) avant toute inscription."
+    q: "Une offre de bienvenue a-t-elle un impact réel sur l'expérience de jeu ?",
+    a: "Assurément. Elle vous donne accès à un capital de départ plus conséquent pour démarrer. Examinez néanmoins avec soin les conditions de libération (wagering) associées avant de vous inscrire."
   },
   {
-    q: "Les jeux en ligne sont-ils légaux sur le territoire français ?",
-    a: "Tout à fait, dès lors que vous utilisez des plateformes détenant une autorisation délivrée par l'Autorité Nationale des Jeux (ANJ). Chacun des sites référencés sur BiarritzFR a été préalablement contrôlé et validé."
+    q: "La pratique des jeux en ligne est-elle autorisée en France ?",
+    a: "Oui, à condition d'utiliser des plateformes titulaires d'une autorisation délivrée par l'Autorité Nationale des Jeux (ANJ). L'ensemble des opérateurs mis en avant sur MonteCarloFR ont été vérifiés et validés en amont."
   },
   {
-    q: "Comment récupérer mes gains sur une plateforme en ligne ?",
-    a: "Le virement bancaire vers votre compte vérifié est le mode de retrait le plus courant. Selon la plateforme et le montant, les délais peuvent aller de quelques heures à plusieurs jours ouvrés."
+    q: "Comment procéder pour retirer ses gains depuis une plateforme en ligne ?",
+    a: "Le virement bancaire vers votre compte personnel vérifié demeure la méthode la plus répandue. Les délais varient selon l'opérateur et le montant sollicité, de quelques heures à plusieurs jours ouvrables."
   }
 ];
 

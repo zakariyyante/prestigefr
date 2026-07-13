@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BiarritzFR - Les Meilleures Plateformes de Jeux en France",
-  description: "Découvrez et comparez les plateformes de jeux en ligne autorisées en France, rigoureusement sélectionnées par nos experts.",
+  title: "MonteCarloFR - Les Meilleures Plateformes de Jeux en France",
+  description: "Explorez et évaluez les opérateurs de jeux en ligne autorisés en France, soigneusement examinés par notre équipe d'experts.",
 };
 
 export const revalidate = 0;

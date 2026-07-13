@@ -12,15 +12,15 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-gray-300">
-              Une remarque, une demande de renseignements ou un signalement à formuler concernant l'une des plateformes de notre sélection ? 
-              Notre équipe prend connaissance de chaque message et vous répond rapidement.
+              Une suggestion, une question ou un retour à partager sur l'une des plateformes figurant dans notre sélection ? 
+              Notre équipe prend connaissance de chaque message et s'engage à vous répondre dans les meilleurs délais.
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-4 p-4 bg-panel border border-border rounded-xl">
                 <span className="text-primary text-2xl">📧</span>
                 <div>
                   <h4 className="font-bold">Adresse e-mail</h4>
-                  <p className="text-sm text-gray-400">contact@biarritzfr.com</p>
+                  <p className="text-sm text-gray-400">contact@montecarloFR.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 p-4 bg-panel border border-border rounded-xl">

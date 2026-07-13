@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #010D00;
-  --foreground: #f5f0ff;
-  --primary: #a855f7;
-  --primary-glow: rgba(168, 85, 247, 0.50);
-  --secondary: #c084fc;
-  --accent: #b45309;
-  --accent-glow: rgba(180, 83, 9, 0.38);
-  --panel: rgba(55, 20, 85, 0.88);
-  --card: rgba(78, 30, 115, 0.80);
-  --border: rgba(150, 75, 200, 0.45);
+  --background: #0e0906;
+  --foreground: #f5f0e8;
+  --primary: #d4a017;
+  --primary-glow: rgba(212, 160, 23, 0.45);
+  --secondary: #e8b830;
+  --accent: #c0580a;
+  --accent-glow: rgba(192, 88, 10, 0.38);
+  --panel: rgba(28, 18, 6, 0.92);
+  --card: rgba(48, 32, 10, 0.92);
+  --border: rgba(180, 130, 40, 0.35);
 }
 
 @theme inline {
@@ -26,15 +26,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(168, 85, 247, 0.25);
-  --shadow-cyan: 0 0 15px var(--accent-glow), 0 0 30px rgba(180, 83, 9, 0.15);
+  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(212, 160, 23, 0.2);
+  --shadow-cyan: 0 0 15px var(--accent-glow), 0 0 30px rgba(192, 88, 10, 0.15);
 }
 
 body {
   background: var(--background);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.22) 0%, transparent 50%),
-    radial-gradient(circle at 85% 85%, rgba(120, 30, 10, 0.14) 0%, transparent 45%);
+    radial-gradient(circle at 50% 0%, rgba(212, 160, 23, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 85% 85%, rgba(120, 50, 10, 0.10) 0%, transparent 45%);
     /* url('/purple-casino-interior-enhanced.png') */
   /* background-attachment: fixed; */
   /* background-size: cover; */
@@ -49,8 +49,8 @@ body {
 }
 
 .neon-text {
-  color: #00e5cc;
-  text-shadow: 0 0 8px rgba(0, 229, 204, 0.75), 0 0 22px rgba(0, 229, 204, 0.4), 0 0 45px rgba(0, 229, 204, 0.2);
+  color: var(--primary);
+  text-shadow: 0 0 8px var(--primary-glow), 0 0 22px rgba(212, 160, 23, 0.35), 0 0 45px rgba(212, 160, 23, 0.15);
 }
 
 .red-neon-text {

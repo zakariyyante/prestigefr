@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const lp = await getLandingPage();
   return {
-    title: lp?.pageTitle || "BiarritzFR - Les Meilleures Plateformes de Jeux en France",
-    description: lp?.headParagraph || "Découvrez et comparez les plateformes de jeux en ligne autorisées en France, rigoureusement sélectionnées par nos experts.",
+    title: lp?.pageTitle || "MonteCarloFR - Les Meilleures Plateformes de Jeux en France",
+    description: lp?.headParagraph || "Explorez et évaluez les opérateurs de jeux en ligne autorisés en France, soigneusement examinés par notre équipe d'experts.",
   };
 }
 
