@@ -7,7 +7,7 @@ export const mockLandingPages: ApiLandingPage[] = [
     order: 1,
     headText: "Les Meilleures Plateformes de Jeux en France 2026",
     headParagraph: "Parcourez notre palmarès des plateformes les plus fiables et rentables, minutieusement examinées à votre intention.",
-    pageTitle: "MonteCarloFR - Les Meilleures Plateformes de Jeux en France",
+    pageTitle: "PrestigeFR - Les Meilleures Plateformes de Jeux en France",
   }
 ];
 

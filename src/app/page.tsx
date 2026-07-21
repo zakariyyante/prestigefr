@@ -15,8 +15,8 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   const lp = await getLandingPage();
   return {
-    title: lp?.pageTitle || "MonteCarloFR - Les Meilleures Plateformes de Jeux en France",
-    description: lp?.headParagraph || "Explorez et évaluez les opérateurs de jeux en ligne autorisés en France, soigneusement examinés par notre équipe d'experts.",
+    title: lp?.pageTitle || "PrestigeFR - Les Meilleures Plateformes de Jeux en France",
+    description: lp?.headParagraph || "Découvrez et analysez les opérateurs de jeux en ligne autorisés en France, minutieusement examinés par notre équipe d'experts indépendants.",
   };
 }
 

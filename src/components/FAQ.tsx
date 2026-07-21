@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "La pratique des jeux en ligne est-elle autorisée en France ?",
-    a: "Oui, à condition d'utiliser des plateformes titulaires d'une autorisation délivrée par l'Autorité Nationale des Jeux (ANJ). L'ensemble des opérateurs mis en avant sur MonteCarloFR ont été vérifiés et validés en amont."
+    a: "Oui, à condition d'utiliser des plateformes titulaires d'une autorisation délivrée par l'Autorité Nationale des Jeux (ANJ). L'ensemble des opérateurs mis en avant sur PrestigeFR ont été rigoureusement vérifiés et validés."
   },
   {
     q: "Comment procéder pour retirer ses gains depuis une plateforme en ligne ?",

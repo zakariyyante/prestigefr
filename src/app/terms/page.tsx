@@ -12,15 +12,15 @@ export default function Terms() {
         <div className="prose prose-invert max-w-none space-y-6 text-gray-400 text-sm">
           <p>Dernière mise à jour : Juillet 2026</p>
           <h2 className="text-xl font-bold text-white">1. Acceptation des conditions</h2>
-          <p>En consultant MonteCarloFR, vous attestez avoir lu et compris les présentes conditions et vous engagez à les observer, ainsi que l'ensemble des dispositions légales applicables.</p>
+          <p>En consultant PrestigeFR, vous attestez avoir pris connaissance des présentes conditions et vous engagez à les respecter, ainsi que l'ensemble des dispositions légales en vigueur.</p>
           <h2 className="text-xl font-bold text-white">2. Restrictions d'accès</h2>
-          <p>Ce site est exclusivement destiné aux personnes âgées de 18 ans révolus. Toute consultation par un individu mineur est formellement proscrite et contraire à la réglementation en vigueur.</p>
-          <h2 className="text-xl font-bold text-white">3. Nature du service proposé</h2>
-          <p>MonteCarloFR est un portail d'affiliation indépendant. Nous ne sommes détenteurs d'aucune licence d'exploitation et n'organisons aucune activité de jeu. Notre rôle se limite à fournir des contenus informatifs et des liens vers des opérateurs tiers.</p>
+          <p>Ce portail est exclusivement destiné aux individus âgés de 18 ans révolus. Toute consultation par un mineur est formellement interdite et contraire à la réglementation applicable.</p>
+          <h2 className="text-xl font-bold text-white">3. Nature du service</h2>
+          <p>PrestigeFR est un portail d'affiliation indépendant. Nous ne sommes titulaires d'aucune licence d'exploitation de jeux et n'organisons aucune activité ludique. Notre rôle se limite à la diffusion de contenus informatifs et de liens vers des opérateurs tiers.</p>
           <h2 className="text-xl font-bold text-white">4. Limitation de responsabilité</h2>
-          <p>Nous veillons à la fiabilité des informations diffusées sur ce site, sans pouvoir en certifier l'exhaustivité à tout moment. La pratique des jeux en ligne implique des risques financiers. MonteCarloFR ne peut être tenu responsable des pertes éventuellement subies sur des plateformes partenaires.</p>
-          <h2 className="text-xl font-bold text-white">5. Droits de propriété intellectuelle</h2>
-          <p>L'ensemble des contenus éditoriaux publiés sur ce site sont la propriété exclusive de MonteCarloFR. Toute reproduction, même partielle, sans autorisation écrite préalable, est formellement prohibée.</p>
+          <p>Nous veillons à l'exactitude des informations publiées sur ce site sans pouvoir en certifier l'exhaustivité à tout moment. La pratique en ligne comporte des risques financiers. PrestigeFR ne peut être tenu responsable des pertes subies sur des plateformes partenaires.</p>
+          <h2 className="text-xl font-bold text-white">5. Propriété intellectuelle</h2>
+          <p>L'ensemble des contenus éditoriaux publiés sur ce site sont la propriété exclusive de PrestigeFR. Toute reproduction, même partielle, sans autorisation écrite préalable est formellement prohibée.</p>
         </div>
       </main>
       <Footer />

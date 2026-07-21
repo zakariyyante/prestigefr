@@ -16,9 +16,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <Lightbulb size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Gérez votre Enveloppe Financière</h3>
+            <h3 className="text-2xl font-bold">Contrôlez votre Budget</h3>
             <p className="text-gray-400">
-              Définissez un montant maximal et ne le franchissez jamais. Fractionnez-le en parts et ne misez pas plus de 1 à 5 % de votre capital total sur une même sélection.
+              Fixez un plafond financier et ne le franchissez en aucun cas. Découpez-le en fractions et ne consacrez jamais plus de 1 à 5 % de votre capital à une seule sélection.
             </p>
           </div>
 
@@ -26,9 +26,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <TrendingUp size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Fondez-vous sur les Statistiques</h3>
+            <h3 className="text-2xl font-bold">Privilégiez les Données Factuelles</h3>
             <p className="text-gray-400">
-              Écartez l'instinct au profit des faits. Chaque décision doit s'appuyer sur des données tangibles : forme actuelle des équipes, absences importantes, historiques de confrontations et enjeu du match.
+              Écartez les jugements affectifs. Fondez chaque décision sur des éléments tangibles : état de forme des équipes, indisponibilités, historiques de confrontations et enjeux du match.
             </p>
           </div>
 
@@ -36,9 +36,9 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <ShieldAlert size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Limitez vos Accumulations</h3>
+            <h3 className="text-2xl font-bold">Réduisez vos Accumulations</h3>
             <p className="text-gray-400">
-              Chaque événement ajouté multiplie le risque de façon exponentielle. Privilégiez les mises simples ou les combinés courts de 2 à 3 sélections au maximum.
+              Chaque sélection supplémentaire multiplie le risque de façon exponentielle. Optez pour des mises uniques ou des combinés courts limités à 2 ou 3 événements.
             </p>
           </div>
 
@@ -46,17 +46,17 @@ export default function Tips() {
             <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center text-primary">
               <BookOpen size={28} />
             </div>
-            <h3 className="text-2xl font-bold">Explorez les Marchés Alternatifs</h3>
+            <h3 className="text-2xl font-bold">Variez vos Types de Marchés</h3>
             <p className="text-gray-400">
-              Over/Under, Handicap Asiatique, Double Chance... Chaque marché obéit à sa propre logique. Les maîtriser vous ouvre des fenêtres d'opportunités souvent ignorées par la majorité des joueurs.
+              Over/Under, Handicap Asiatique, Double Chance... Chaque marché obéit à sa logique propre. Les maîtriser révèle des opportunités souvent ignorées par la majorité des joueurs.
             </p>
           </div>
         </div>
 
         <div className="mt-16 bg-panel border border-primary/20 p-8 rounded-3xl text-center">
-          <h2 className="text-2xl font-bold mb-4">Pratiquez Toujours avec Lucidité</h2>
+          <h2 className="text-2xl font-bold mb-4">Jouez Toujours avec Discernement</h2>
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-            Le jeu ne devrait jamais être source d'anxiété ou de tensions financières. Dès que vous percevez une perte de maîtrise, sollicitez une aide professionnelle sans tarder.
+            Le jeu ne devrait jamais être une source d'anxiété ou de tensions financières. Dès que vous percevez une perte de contrôle, cherchez une aide professionnelle sans tarder.
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GamCare (UK)</a>

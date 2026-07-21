@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0e0906;
-  --foreground: #f5f0e8;
-  --primary: #d4a017;
-  --primary-glow: rgba(212, 160, 23, 0.45);
-  --secondary: #e8b830;
-  --accent: #c0580a;
-  --accent-glow: rgba(192, 88, 10, 0.38);
-  --panel: rgba(28, 18, 6, 0.92);
-  --card: rgba(48, 32, 10, 0.92);
-  --border: rgba(180, 130, 40, 0.35);
+  --background: #08080f;
+  --foreground: #f0f0ff;
+  --primary: #00c8ff;
+  --primary-glow: rgba(0, 200, 255, 0.45);
+  --secondary: #8b5cf6;
+  --accent: #f0c040;
+  --accent-glow: rgba(240, 192, 64, 0.4);
+  --panel: rgba(10, 10, 26, 0.95);
+  --card: rgba(14, 14, 30, 0.98);
+  --border: rgba(0, 200, 255, 0.18);
 }
 
 @theme inline {
@@ -26,19 +26,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(212, 160, 23, 0.2);
-  --shadow-cyan: 0 0 15px var(--accent-glow), 0 0 30px rgba(192, 88, 10, 0.15);
+  --shadow-neon: 0 0 15px var(--primary-glow), 0 0 30px rgba(0, 200, 255, 0.2);
+  --shadow-cyan: 0 0 15px var(--accent-glow), 0 0 30px rgba(240, 192, 64, 0.15);
 }
 
 body {
   background: var(--background);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(212, 160, 23, 0.10) 0%, transparent 50%),
-    radial-gradient(circle at 85% 85%, rgba(120, 50, 10, 0.10) 0%, transparent 45%);
-    /* url('/purple-casino-interior-enhanced.png') */
-  /* background-attachment: fixed; */
-  /* background-size: cover; */
-  /* background-position: center; */
+    radial-gradient(circle at 50% 0%, rgba(0, 200, 255, 0.07) 0%, transparent 55%),
+    radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.07) 0%, transparent 45%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
@@ -50,14 +46,12 @@ body {
 
 .neon-text {
   color: var(--primary);
-  text-shadow: 0 0 8px var(--primary-glow), 0 0 22px rgba(212, 160, 23, 0.35), 0 0 45px rgba(212, 160, 23, 0.15);
+  text-shadow: 0 0 8px var(--primary-glow), 0 0 22px rgba(0, 200, 255, 0.35), 0 0 45px rgba(0, 200, 255, 0.15);
 }
 
 .red-neon-text {
-  color: #00e5cc;
-  -webkit-text-stroke: 1.5px #c0580a;
-  paint-order: stroke fill;
-  text-shadow: 0 0 8px rgba(0, 229, 204, 0.75), 0 0 22px rgba(0, 229, 204, 0.4), 0 0 45px rgba(0, 229, 204, 0.2);
+  color: #00c8ff;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.8), 0 0 25px rgba(0, 200, 255, 0.45), 0 0 50px rgba(0, 200, 255, 0.2);
 }
 
 .cyan-border {

@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0c0906] border-t border-[rgba(180,130,40,0.2)] pt-12 pb-6 mt-auto">
+    <footer className="bg-[#080810] border-t border-[rgba(0,200,255,0.1)] pt-12 pb-6 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Main grid */}
@@ -14,15 +14,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <Image 
-              src="/montecarloFR_icon_transparent.png" 
-              alt="MonteCarloFR" 
+              src="/prestigefr_icon_transparent.png" 
+              alt="PrestigeFR" 
               width={280} 
               height={80} 
               className="h-20 w-auto object-contain"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
-              La référence française pour évaluer et distinguer les opérateurs de jeux en ligne les plus performants. 
-              Nos expertises indépendantes vous orientent exclusivement vers des plateformes fiables, sécurisées et conformes à la réglementation en vigueur.
+              La référence française pour évaluer et distinguer les opérateurs en ligne les plus performants. 
+              Nos expertises indépendantes vous orientent vers des plateformes fiables, sécurisées et conformes à la réglementation en vigueur.
             </p>
           </div>
 
@@ -37,12 +37,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Responsibility text only */}
+          {/* Responsibility */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground">Pratique Responsable</h4>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Préservez le jeu comme source de plaisir. Définissez vos propres limites et tenez-vous-y. 
-              Si vous avez besoin d'aide, les organismes ci-dessous sont à votre disposition.
+              Conservez le jeu comme un loisir. Établissez vos propres limites et respectez-les scrupuleusement. 
+              Si vous ressentez le besoin d'aide, les organismes ci-dessous sont là pour vous accompagner.
             </p>
             <div className="flex items-center gap-2 mt-2">
               <div className="bg-primary text-background font-bold rounded-full w-9 h-9 flex items-center justify-center text-xs shadow-neon flex-shrink-0">
@@ -53,19 +53,19 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ── Regulation & Support logos strip (matching screenshot style) ── */}
-        <div className="border-t border-[rgba(180,130,40,0.15)] pt-8 pb-6">
+        {/* Regulation & Support logos strip */}
+        <div className="border-t border-[rgba(0,200,255,0.1)] pt-8 pb-6">
           <p className="text-sm font-bold text-white mb-6">
             Organismes de régulation et de soutien
           </p>
           <div className="flex flex-wrap items-center gap-8 md:gap-14">
-            <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="opacity-75 hover:opacity-100 transition-opacity">
-              <Image src="/anj_2.png" alt="ANJ" width={80} height={36} className="h-9 w-auto" unoptimized />
+            <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <Image src="/anj.png" alt="ANJ" width={80} height={36} className="h-9 w-auto" unoptimized />
             </a>
-            <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" className="opacity-75 hover:opacity-100 transition-opacity">
+            <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <Image src="/gambleaware.png" alt="GambleAware" width={130} height={36} className="h-9 w-auto" unoptimized />
             </a>
-            <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer" className="opacity-75 hover:opacity-100 transition-opacity">
+            <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <Image src="/joueurs-info-service.png" alt="Joueurs Info Service" width={140} height={36} className="h-9 w-auto" unoptimized />
             </a>
           </div>
@@ -75,14 +75,14 @@ export default function Footer() {
         <div className="border-t border-border pt-8 text-center space-y-4">
           <div className="max-w-4xl mx-auto space-y-2 mb-4">
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Partenariat commercial :</span> Une commission peut nous être attribuée lorsqu'un utilisateur rejoint une plateforme via nos liens de référencement.
+              <span className="font-bold text-gray-300">Partenariat commercial :</span> Une rémunération peut nous être attribuée lorsqu'un utilisateur rejoint une plateforme via nos liens de référencement.
             </p>
             <p className="text-gray-400 text-[11px] leading-relaxed">
-              <span className="font-bold text-gray-300">Neutralité garantie :</span> Seuls les opérateurs tiers homologués offrant les meilleures garanties figurent dans notre classement. MonteCarloFR n'exploite aucune plateforme et ne dispense aucun service de jeu directement.
+              <span className="font-bold text-gray-300">Neutralité garantie :</span> Seuls les opérateurs tiers homologués offrant les meilleures garanties figurent dans notre classement. PrestigeFR n'exploite aucune plateforme et ne propose aucun service de jeu en direct.
             </p>
           </div>
           <p className="text-gray-500 text-xs">
-            © {currentYear} MonteCarloFR. Tous droits réservés. L'accès aux jeux en ligne est strictement réservé aux personnes majeures.
+            © {currentYear} PrestigeFR. Tous droits réservés. L'accès aux jeux en ligne est strictement réservé aux personnes majeures.
           </p>
           <div className="bg-panel/50 p-4 rounded-lg border border-border/50 text-[10px] text-gray-400 max-w-4xl mx-auto leading-relaxed">
             🔞 NOTICE OBLIGATOIRE : Toute personne désireuse de s'auto-exclure des jeux d'argent doit formuler sa demande directement auprès du ministère de l'intérieur. 

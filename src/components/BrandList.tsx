@@ -11,10 +11,10 @@ interface BrandListProps {
 }
 
 const badges = [
-  { icon: <Shield size={14} />, text: 'Certifié & Protégé' },
-  { icon: <Zap size={14} />, text: 'Retraits le Jour Même' },
-  { icon: <FileText size={14} />, text: 'Documentation Minimale' },
-  { icon: <Eye size={14} />, text: 'Jeu Privé' },
+  { icon: <Shield size={14} />, text: 'Homologué & Sécurisé' },
+  { icon: <Zap size={14} />, text: 'Paiements Instantanés' },
+  { icon: <FileText size={14} />, text: 'Inscription Simplifiée' },
+  { icon: <Eye size={14} />, text: 'Données Protégées' },
 ];
 
 export default function BrandList({ partners, isMobile }: BrandListProps) {
@@ -22,6 +22,17 @@ export default function BrandList({ partners, isMobile }: BrandListProps) {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 md:py-8">
+
+      {/* Section heading */}
+      <div className="text-center mb-8 md:mb-10">
+        <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-3">
+          TOP <span className="neon-text">PLATEFORMES</span> RECOMMANDÉES
+        </h2>
+        <p className="text-gray-400 text-sm max-w-xl mx-auto">
+          Notre palmarès rigoureux des meilleurs opérateurs, établi selon la sécurité, les avantages proposés et la qualité de l'expérience globale.
+        </p>
+      </div>
+
       {/* Mobile Badges */}
       {isMobile && (
         <div className="flex overflow-x-auto space-x-2 pb-3 hide-scrollbar">

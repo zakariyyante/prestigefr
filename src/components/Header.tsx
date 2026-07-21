@@ -18,24 +18,24 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full shadow-md">
       {/* Top info strip */}
-      <div className="bg-[#0f2318] text-gray-300 text-[10px] py-1.5 px-4 text-center tracking-wider border-b border-[#1a3d28]">
-        <span className="hidden md:inline">Éditoriaux indépendants &nbsp;|&nbsp; Jeu responsable &nbsp;|&nbsp; Cadre réglementaire</span>
-        <span className="md:hidden">Éditoriaux indépendants · Jeu responsable</span>
+      <div className="bg-[#0a0a18] text-gray-400 text-[10px] py-1.5 px-4 text-center tracking-wider border-b border-[rgba(0,200,255,0.1)]">
+        <span className="hidden md:inline">Analyses indépendantes &nbsp;|&nbsp; Pratique responsable &nbsp;|&nbsp; Cadre réglementaire</span>
+        <span className="md:hidden">Analyses indépendantes · Pratique responsable</span>
       </div>
 
       {/* 18+ Disclaimer */}
       <div className="bg-primary text-background text-[10px] font-bold py-1 px-4 text-center uppercase tracking-widest">
-        🔞 Jouer peut engendrer des difficultés financières et une dépendance. Ligne d'écoute gratuite : 09 74 75 13 13
+        🔞 La pratique des jeux peut générer une dépendance et des difficultés financières. Aide gratuite : 09 74 75 13 13
       </div>
 
-      <div className="bg-[#0c0906] border-b border-[rgba(180,130,40,0.2)]">
+      <div className="bg-[#080810] border-b border-[rgba(0,200,255,0.12)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             <div className="flex items-center">
               <Link href="/" className="flex items-center space-x-2">
                 <Image 
-                  src="/montecarloFR_icon_transparent.png" 
-                  alt="MonteCarloFR" 
+                  src="/prestigefr_icon_transparent.png" 
+                  alt="PrestigeFR" 
                   width={220} 
                   height={60} 
                   className="h-14 w-auto object-contain"
@@ -72,7 +72,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0c0906] border-b border-border">
+        <div className="md:hidden bg-[#080810] border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

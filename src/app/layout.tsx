@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MonteCarloFR - Les Meilleures Plateformes de Jeux en France",
-  description: "Explorez et évaluez les opérateurs de jeux en ligne autorisés en France, soigneusement examinés par notre équipe d'experts.",
+  title: "PrestigeFR - Les Meilleures Plateformes de Jeux en France",
+  description: "Découvrez et analysez les opérateurs de jeux en ligne autorisés en France, minutieusement examinés par notre équipe d'experts indépendants.",
 };
 
 export const revalidate = 0;

@@ -6,7 +6,7 @@ export function ContentSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-4xl font-black mb-8 leading-tight">
-            Ce qui place <span className="neon-text">MonteCarloFR</span> au-dessus du lot
+            Ce qui place <span className="neon-text">PrestigeFR</span> au-dessus du lot
           </h2>
           <div className="space-y-6">
             <div className="flex space-x-4">
