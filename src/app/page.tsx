@@ -40,8 +40,8 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ [
       
       <main className="flex-grow">
         <Hero 
-          headText={lp?.headText || "Les Meilleures Plateformes de Jeux en France 2026"} 
-          headParagraph={lp?.headParagraph || "Découvrez notre sélection exclusive."} 
+          headText={lp?.headText || "Évaluation des opérateurs de jeux agréés en France"} 
+          headParagraph={lp?.headParagraph || "Identifiez un opérateur homologué par l'ANJ en toute clarté : nous analysons les offres, les parcours d'inscription et les conditions de retrait — sans création de compte requise sur PrestigeFR."} 
         />
         
         <BrandList partners={partners} isMobile={isMobile} />

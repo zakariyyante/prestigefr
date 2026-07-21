@@ -5,8 +5,8 @@ export const mockLandingPages: ApiLandingPage[] = [
     id: "lp_1",
     isActive: true,
     order: 1,
-    headText: "Les Meilleures Plateformes de Jeux en France 2026",
-    headParagraph: "Parcourez notre palmarès des plateformes les plus fiables et rentables, minutieusement examinées à votre intention.",
+    headText: "Évaluation des opérateurs de jeux agréés en France",
+    headParagraph: "Identifiez un opérateur homologué par l'ANJ en toute clarté : nous analysons les offres, les parcours d'inscription et les conditions de retrait — sans création de compte requise sur PrestigeFR.",
     pageTitle: "PrestigeFR - Les Meilleures Plateformes de Jeux en France",
   }
 ];

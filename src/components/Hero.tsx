@@ -7,128 +7,85 @@ interface HeroProps {
   headParagraph: string;
 }
 
+const plusGridBg = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23ffffff' fill-opacity='0.07'%3E%3Crect x='19' y='13' width='2' height='14'/%3E%3Crect x='13' y='19' width='14' height='2'/%3E%3C/g%3E%3C/svg%3E")`;
+
 export default function Hero({ headText, headParagraph }: HeroProps) {
   return (
-    <section className="relative py-8 md:py-14 overflow-hidden border-b border-[rgba(0,200,255,0.1)]">
-      {/* Background glow */}
-      <div className="absolute top-0 left-1/3 -translate-x-1/2 w-[500px] h-[400px] bg-primary/6 blur-[110px] rounded-full -z-10" />
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-secondary/5 blur-[120px] rounded-full -z-10" />
+    <>
+      {/* ── Main Hero ── */}
+      <section
+        className="relative overflow-hidden py-20 md:py-28 text-center"
+        style={{ background: '#0d1628', backgroundImage: plusGridBg }}
+      >
+        {/* bottom fade into page bg */}
+        <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-b from-transparent to-[#08080f] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-8 items-start">
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6">
 
-          {/* ── LEFT: main content ── */}
-          <div className="flex-1 min-w-0">
-
-            {/* Flag badges row */}
-            <div className="flex items-center flex-wrap gap-2 mb-4">
-              <span className="inline-flex items-center space-x-1.5 bg-panel border border-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-300">
-                <span>🇫🇷</span><span>FRANCE · 2026</span>
-              </span>
-              <span className="inline-flex items-center space-x-1.5 bg-panel border border-border px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-300">
-                <span>🔒</span><span>Marché réglementé</span>
-              </span>
-            </div>
-
-            {/* Update badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center space-x-2 bg-panel border border-border px-3 py-1 rounded-full mb-4"
-            >
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-300">
-                Mis à jour : Juillet 2026
-              </span>
-            </motion.div>
-
-            {/* H1 */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl md:text-5xl font-extrabold mb-3 tracking-tight leading-tight"
-            >
-              {headText.split(' ').map((word, i) => (
-                <span key={i} className={i >= headText.split(' ').length - 2 ? 'red-neon-text' : ''}>
-                  {word}{' '}
-                </span>
-              ))}
-            </motion.h1>
-
-            {/* Paragraph */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-gray-400 text-sm md:text-base mb-5 leading-relaxed max-w-xl"
-            >
-              {headParagraph}
-            </motion.p>
-
-            {/* Small pill badges */}
-            <div className="flex items-center flex-wrap gap-2 mb-5">
-              <span className="bg-primary/15 border border-primary/40 text-primary text-[11px] font-black px-3 py-1 rounded-full">ANJ</span>
-              <span className="bg-primary/15 border border-primary/40 text-primary text-[11px] font-black px-3 py-1 rounded-full">18+</span>
-              <span className="bg-primary/15 border border-primary/40 text-primary text-[11px] font-black px-3 py-1 rounded-full">Indép.</span>
-            </div>
-
-            {/* Feature badges */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-wrap gap-3"
-            >
-              <div className="flex items-center space-x-2 bg-panel/60 border border-border px-4 py-2 rounded-lg">
-                <span className="text-primary">🛡️</span>
-                <span className="text-xs font-medium">Agréé ANJ</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-panel/60 border border-border px-4 py-2 rounded-lg">
-                <span className="text-primary">⚡</span>
-                <span className="text-xs font-medium">Retraits Instantanés</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-panel/60 border border-border px-4 py-2 rounded-lg">
-                <span className="text-primary">🎁</span>
-                <span className="text-xs font-medium">Avantages Exclusifs</span>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* ── RIGHT: info card ── */}
+          {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-            className="w-full md:w-64 flex-shrink-0"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45 }}
+            className="inline-flex items-center gap-2 border border-white/25 rounded-full px-4 py-1.5 mb-8 text-[11px] font-bold text-white/80 tracking-widest uppercase"
           >
-            <div className="bg-panel border border-[rgba(0,200,255,0.2)] rounded-2xl p-5 shadow-[0_0_30px_rgba(0,200,255,0.06)]">
-              <h4 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4 pb-2 border-b border-border">
-                EN UN COUP D'ŒIL
-              </h4>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">Cadre légal</span>
-                  <span className="bg-primary/20 text-primary font-black text-xs px-2.5 py-0.5 rounded">ANJ</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">Accès</span>
-                  <span className="bg-primary/20 text-primary font-black text-xs px-2.5 py-0.5 rounded">18+</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-gray-400 text-sm">Contenu</span>
-                  <span className="bg-primary/20 text-primary font-black text-xs px-2.5 py-0.5 rounded">Indép.</span>
-                </div>
-              </div>
-              <p className="text-[10px] text-gray-500 mt-4 pt-3 border-t border-border/50 leading-relaxed">
-                Analyses informatives uniquement — jouez de façon responsable.
-              </p>
-            </div>
+            <span>🇫🇷</span>
+            <span>France · Édition 2026</span>
+          </motion.div>
+
+          {/* Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.08 }}
+            className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight tracking-tight"
+          >
+            {headText}
+          </motion.h1>
+
+          {/* Paragraph */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.16 }}
+            className="text-gray-300 text-base md:text-lg mb-10 leading-relaxed max-w-2xl mx-auto"
+          >
+            {headParagraph}
+          </motion.p>
+
+          {/* CTA row */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.24 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+          >
+            <a
+              href="#operators"
+              className="bg-white text-gray-900 font-black px-8 py-3.5 rounded-full text-sm uppercase tracking-widest hover:bg-gray-100 active:scale-95 transition-all shadow-lg"
+            >
+              Voir les Opérateurs
+            </a>
+            <span className="text-gray-400 text-xs">
+              18+ · Jouer comporte des risques ·{' '}
+              <a href="/tips" className="underline hover:text-white transition-colors">
+                Jeu responsable
+              </a>
+            </span>
           </motion.div>
 
         </div>
+      </section>
+
+      {/* ── Affiliate Transparency Card ── */}
+      <div className="bg-[#08080f] py-6 px-4">
+        <div className="max-w-3xl mx-auto bg-[#0f1120] border border-[rgba(0,200,255,0.1)] rounded-2xl p-5 md:p-6">
+          <h4 className="text-primary font-bold text-sm mb-2">Transparence partenaires</h4>
+          <p className="text-gray-400 text-xs leading-relaxed">
+            PrestigeFR est un portail éditorial indépendant. Certains liens vers des opérateurs agréés ANJ sont des liens d'affiliation : en vous inscrivant après clic, nous pouvons percevoir une rémunération sans surcoût pour vous. Cette rémunération n'influe ni sur nos analyses ni sur l'ordre de nos classements. Les montants de bonus sont donnés à titre indicatif — consultez toujours les conditions directement sur le site de l'opérateur avant de jouer.
+          </p>
+        </div>
       </div>
-    </section>
+    </>
   );
 }
