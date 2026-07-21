@@ -5,8 +5,8 @@ export const mockLandingPages: ApiLandingPage[] = [
     id: "lp_1",
     isActive: true,
     order: 1,
-    headText: "Évaluation des opérateurs de jeux agréés en France",
-    headParagraph: "Identifiez un opérateur homologué par l'ANJ en toute clarté : nous analysons les offres, les parcours d'inscription et les conditions de retrait — sans création de compte requise sur PrestigeFR.",
+    headText: "Classement des Opérateurs de Jeux Homologués en France",
+    headParagraph: "Trouvez un opérateur agréé ANJ en toute transparence : nous analysons les offres, les conditions de retrait et l'expérience utilisateur — sans inscription requise sur PrestigeFR.",
     pageTitle: "PrestigeFR - Les Meilleures Plateformes de Jeux en France",
   }
 ];

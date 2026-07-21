@@ -40,11 +40,13 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ [
       
       <main className="flex-grow">
         <Hero 
-          headText={lp?.headText || "Évaluation des opérateurs de jeux agréés en France"} 
-          headParagraph={lp?.headParagraph || "Identifiez un opérateur homologué par l'ANJ en toute clarté : nous analysons les offres, les parcours d'inscription et les conditions de retrait — sans création de compte requise sur PrestigeFR."} 
+          headText={lp?.headText || "Classement des Opérateurs de Jeux Homologués en France"} 
+          headParagraph={lp?.headParagraph || "Trouvez un opérateur agréé ANJ en toute transparence : nous analysons les offres, les conditions de retrait et l'expérience utilisateur — sans inscription requise sur PrestigeFR."} 
         />
         
-        <BrandList partners={partners} isMobile={isMobile} />
+        <div id="brands">
+          <BrandList partners={partners} isMobile={isMobile} />
+        </div>
         
         <ContentSection />
         <AdditionalSection />
